@@ -1604,6 +1604,9 @@ h6 {
 
 .list-item {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -1611,7 +1614,14 @@ h6 {
 }
 
 .list-item-title {
+  margin-right: 10px;
   font-weight: 600;
+}
+
+.list-item-copy {
+  margin-left: 40px;
+  color: #3C59F0;
+  cursor: pointer;
 }
 
 .bank {
@@ -1739,11 +1749,11 @@ h6 {
 }
 
 .header-page__logo-text {
-  width: 9.5625rem;
-  margin-left: 0.875rem;
+  width: 153px;
+  margin-left: 14px;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.4375rem;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 .header-page__btns {
@@ -1919,8 +1929,92 @@ h6 {
       align-content: space-between;
 }
 
+.partner__item-hyundai {
+  padding-left: 76px;
+  position: relative;
+}
+
+.partner__item-hyundai::before {
+  content: "";
+  background-image: url("../img/hyundai.svg");
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partner__item-renault {
+  padding-left: 46px;
+  position: relative;
+}
+
+.partner__item-renault::before {
+  content: "";
+  background-image: url("../img/renault.svg");
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partner__item-nissan {
+  padding-left: 82px;
+  position: relative;
+}
+
+.partner__item-nissan::before {
+  content: "";
+  background-image: url("../img/nissan_logo 1.svg");
+  width: 62px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partner__item-ford {
+  padding-left: 110px;
+  position: relative;
+}
+
+.no-webp .partner__item-ford::before{
+  background-image: url("../img/ford-logo.png"); }
+
+.partner__item-ford::before {
+  content: "";
+  width: 94px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partner__item-skoda {
+  padding-left: 77px;
+  position: relative;
+}
+
+.no-webp .partner__item-skoda::before{
+  background-image: url("../img/skoda_logo.png"); }
+
+.partner__item-skoda::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .partner__item-title {
-  max-width: 366px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 600;
   font-size: 32px;
   line-height: 39px;
@@ -1949,7 +2043,19 @@ h6 {
 }
 
 .partner__item-place {
+  position: relative;
+  padding-left: 22px;
   line-height: 28px;
+}
+
+.partner__item-place::before {
+  content: "";
+  background-image: url("../img/map-blk.svg");
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .partner__item:last-child {
@@ -2589,6 +2695,10 @@ h6 {
     display: block;
   }
 }
+
+.webp .partner__item-ford::before{ background-image: url(../img/ford-logo.webp); }
+
+.webp .partner__item-skoda::before{ background-image: url(../img/skoda_logo.webp); }
 
 @media (max-width: 29.99875em){
 
