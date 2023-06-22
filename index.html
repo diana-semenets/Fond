@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230621162441">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622103918">
 
 	<link rel="shortcut icon" href="logo.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -234,23 +234,23 @@
 													</div>
 												</div>
 												<div class="card-sum__btns">
-													<button class="card-sum__btn">100 UAH</button>
-													<button class="card-sum__btn">500 UAH</button>
-													<button class="card-sum__btn">1000 UAH</button>
+													<button type="button" class="card-sum__btn">100 UAH</button>
+													<button type="button" class="card-sum__btn">500 UAH</button>
+													<button type="button" class="card-sum__btn">1000 UAH</button>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="tab__card-mail">
-										<label for="" class="tab__card-label">Email*</label>
+									<form class="tab__card-mail">
+										<label for="input-email" class="tab__card-label">Email*</label>
 										<div class="card-mail">
-											<input type="email" class="input" placeholder="Введіть ваш email">
+											<input type="email" class="input" placeholder="Введіть ваш email" id="input-email" name="input-email">
 											<div class="card-mail-text">Вам надійде квітанція на email та ви будете отримувати звітності по вашому внеску</div>
 										</div>
-									</div>
+									</form>
 									<button type="button" class="tab__card-btn btn-blue"><a href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
 								</div>
-								<button type="button" class="tab__btn btn"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
+								<button type="button" class="tab__btn btn" id="subs"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
 							</div>
 							<div class="donat-tabs__body"> ДРУГИЙ ТАБ</div>
 
@@ -324,10 +324,10 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__box">
-				<div class="footer__form">
+				<div class="footer__form" id="report">
 					<div class="footer__form-text">Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !</div>
 					<form class="footer__form-input">
-						<input autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="Твій email" class="input">
+						<input autocomplete="off" type="email" name="form-footer" data-error="Помилка" placeholder="Твій email" class="input">
 						<button type="button" class="footer__form-btn"><span class="_icon-arrowicon"></span></button>
 					</form>
 				</div>
@@ -338,8 +338,8 @@
 					</div>
 					<div class="footer__lists">
 						<ul class="footer__list">
-							<li class="footer__list-item"><a href="#">Звітність</a></li>
-							<li class="footer__list-item"><a href="#">Підписка</a></li>
+							<li class="footer__list-item"><a href="index.html#report">Звітність</a></li>
+							<li class="footer__list-item"><a href="index.html#subs">Підписка</a></li>
 							<li class="footer__list-item"><a href="partners.html">Партнери</a></li>
 							<li class="footer__list-item"><a href="vacancy.html">Вакансії</a></li>
 							<li class="footer__list-item"><a href="help.html">Часті запитання</a> </li>
@@ -368,7 +368,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230621162441"></script>
+	<script src="js/app.min.js?_v=20230622103918"></script>
 </body>
 
 </html>

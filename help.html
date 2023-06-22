@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230621120725">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622103918">
 
 	<link rel="shortcut icon" href="logo.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -16,17 +16,17 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__box">
+		<header class="header-page">
+			<div class="header-page__box">
 				<div class="header__logo">
-					<div class="header__logo-img"><a href="home.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a></div>
+					<div class="header__logo-img"><a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a></div>
 					<div class="header__logo-text">Волонтерський Рух України</div>
 				</div>
 				<ul class="header__nav">
-					<li class="header__nav-item"><a href="#">Підтримати</a></li>
+					<li class="header__nav-item"><a href="index.html#donat">Підтримати</a></li>
 					<li class="header__nav-item avto"><a href="#">Запит на авто</a></li>
 				</ul>
-				<div class="header__btns">
+				<div class="header-page__btns">
 					<button class="header__btns-btn">UA</button>
 					<button class="header__btns-btn">EN</button>
 				</div>
@@ -36,12 +36,14 @@
 
 			<section class="help">
 				<div class="help__box">
-					<button type="button" class="help__btn"><a href="index.html"><span class="_icon-arrow-left"></a></button>
+					<button type="button" class="help__btn"><a href="index.html"><span class="_icon-arrow-left"></span></a></button>
 					<div class="help__content">
 						<div class="help__title title">Часті запитання</div>
 						<div data-spollers class="help__items spollers">
 							<div class="spollers__item help__items-item">
-								<button type="button" data-spoller class="spollers__title help__item-title">Кому допомагає фонд?</button>
+								<button type="button" data-spoller class="spollers__title help__item-title">
+									<p>Кому допомагає фонд?</p><span class="_icon-arrowicon"></span>
+								</button>
 								<div class="spollers__body help__item-info">
 									<p class="help__item-text">Фонд закуповує та передає авто військовим частинам ЗСУ. Також фонд забезпечує сервісний ремонт авто, що видає та надає
 										безкоштовний технічний супровід та ремонт для кожного переданого автомобіля на сервісних станціях наших партнерів Української Автомобільної Групи «АВТОКРАФТ».</p>
@@ -50,7 +52,9 @@
 							</div>
 
 							<div class="spollers__item help__items-item">
-								<button type="button" data-spoller class="spollers__title help__item-title">Як отримати допомогу від фонду?</button>
+								<button type="button" data-spoller class="spollers__title help__item-title">
+									<p>Як отримати допомогу від фонду?</p><span class="_icon-arrowicon"></span>
+								</button>
 								<div class="spollers__body help__item-info">
 									<p class="help__item-text">Для того щоб отримати автівку для військової частини, вам необхідно заповнити форму зворотнього зв’язку.
 										З вами зв’яжуться наші спеціалісти та опрацюють ваш запит</p>
@@ -59,7 +63,9 @@
 							</div>
 
 							<div class="spollers__item help__items-item">
-								<button type="button" data-spoller class="spollers__title help__item-title">Чому тільки авто?</button>
+								<button type="button" data-spoller class="spollers__title help__item-title">
+									<p>Чому тільки авто?</p><span class="_icon-arrowicon"></span>
+								</button>
 								<div class="spollers__body help__item-info">
 									<p class="help__item-text">Авто відіграють дуже важливу роль на фронті. Завдяки нашим партнерам сервісним центрам, ми не тільки закуповуємо автомобілі,
 										ми також проводимо ретельну перевірку їх технічного стану, виправляємо недоліки та перефарбовуємо. </p>
@@ -70,7 +76,9 @@
 							</div>
 
 							<div class="spollers__item help__items-item">
-								<button type="button" data-spoller class="spollers__title help__item-title">Які авто надає фонд?</button>
+								<button type="button" data-spoller class="spollers__title help__item-title">
+									<p>Які авто надає фонд?</p><span class="_icon-arrowicon"></span>
+								</button>
 								<div class="spollers__body help__item-info">
 									<p class="help__item-text">Фонд закуповує позашляховики та мінібуси Hyundai. Наш партнер сервісний центр Hyundai у місті Дніпро видає автомобілі та забезпечує їх технічний супровід. </p>
 									<p class="help__item-text">В подальшому за вашої підтримки, ми плануємо масшабуватись та задіювати сервісні центри наших партнерів у містах Черкаси та Кропівницький.
@@ -126,9 +134,9 @@
 											<div class="card-mail-text">Вам надійде квітанція на email та ви будете отримувати звітності по вашому внеску</div>
 										</div>
 									</div>
-									<button type="button" class="tab__card-btn btn-blue">Підтримати</button>
+									<button type="button" class="tab__card-btn btn-blue"><a href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
 								</div>
-								<button type="button" class="tab__btn btn">Оформити підписку</button>
+								<button type="button" class="tab__btn btn"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span></button>
 							</div>
 							<div class="donat-tabs__body"> ДРУГИЙ ТАБ</div>
 
@@ -202,22 +210,22 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__box">
-				<div class="footer__form">
+				<div class="footer__form" id="report">
 					<div class="footer__form-text">Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !</div>
 					<form class="footer__form-input">
-						<input autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="Твій email" class="input">
+						<input autocomplete="off" type="email" name="form-footer" data-error="Помилка" placeholder="Твій email" class="input">
 						<button type="button" class="footer__form-btn"><span class="_icon-arrowicon"></span></button>
 					</form>
 				</div>
 				<div class="footer__content">
 					<div class="footer__logo">
-						<div class="footer__logo-img"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="логотип Волонтерський Рух України"></picture></div>
+						<div class="footer__logo-img"><a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="логотип Волонтерський Рух України"></picture></a></div>
 						<div class="footer__logo-text">Волонтерський Рух України</div>
 					</div>
 					<div class="footer__lists">
 						<ul class="footer__list">
-							<li class="footer__list-item"><a href="#">Звітність</a></li>
-							<li class="footer__list-item"><a href="#">Підписка</a></li>
+							<li class="footer__list-item"><a href="index.html#report">Звітність</a></li>
+							<li class="footer__list-item"><a href="index.html#subs">Підписка</a></li>
 							<li class="footer__list-item"><a href="partners.html">Партнери</a></li>
 							<li class="footer__list-item"><a href="vacancy.html">Вакансії</a></li>
 							<li class="footer__list-item"><a href="help.html">Часті запитання</a> </li>
@@ -246,7 +254,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230621120725"></script>
+	<script src="js/app.min.js?_v=20230622103918"></script>
 </body>
 
 </html>

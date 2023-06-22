@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230621162441">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622103918">
 
 	<link rel="shortcut icon" href="logo.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -16,17 +16,17 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__box">
+		<header class="header-page">
+			<div class="header-page__box">
 				<div class="header__logo">
-					<div class="header__logo-img"><a href="home.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a></div>
+					<div class="header__logo-img"><a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture></a></div>
 					<div class="header__logo-text">Волонтерський Рух України</div>
 				</div>
 				<ul class="header__nav">
-					<li class="header__nav-item"><a href="#">Підтримати</a></li>
+					<li class="header__nav-item"><a href="index.html#donat">Підтримати</a></li>
 					<li class="header__nav-item avto"><a href="#">Запит на авто</a></li>
 				</ul>
-				<div class="header__btns">
+				<div class="header-page__btns">
 					<button class="header__btns-btn">UA</button>
 					<button class="header__btns-btn">EN</button>
 				</div>
@@ -40,16 +40,16 @@
 						<div class="vacancy__title title">Вакансії</div>
 						<div class="vacancy__items">
 							<div class="vacancy__items-item vacancy__item">
-								<div class="vacancy__item-title">Координатор юриста</div>
+								<div class="vacancy__item-title"><span class="vacancy__item-name">Координатор юриста</span><span class="_icon-arrowicon"></span></div>
 								<div class="vacancy__item-info">
-									<div class="vacancy__item-work">work.ua</div>
+									<div class="vacancy__item-work"><a href="#">work.ua</a></div>
 									<div class="vacancy__item-place">Одеса, Україна <br>вул. Гагаріна, 12 а</div>
 								</div>
 							</div>
 							<div class="vacancy__items-item vacancy__item">
-								<div class="vacancy__item-title">Регіональний координатор БФ</div>
+								<div class="vacancy__item-title"><span class="vacancy__item-name">Регіональний координатор БФ</span><span class="_icon-arrowicon"></span></div>
 								<div class="vacancy__item-info">
-									<div class="vacancy__item-work">work.ua</div>
+									<div class="vacancy__item-work"><a href="#">work.ua</a></div>
 									<div class="vacancy__item-place">Одеса, Україна <br>вул. Гагаріна, 12 а</div>
 								</div>
 							</div>
@@ -101,9 +101,9 @@
 											<div class="card-mail-text">Вам надійде квітанція на email та ви будете отримувати звітності по вашому внеску</div>
 										</div>
 									</div>
-									<button type="button" class="tab__card-btn btn-blue">Підтримати</button>
+									<button type="button" class="tab__card-btn btn-blue"><a href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
 								</div>
-								<button type="button" class="tab__btn btn">Оформити підписку</button>
+								<button type="button" class="tab__btn btn"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span></button>
 							</div>
 							<div class="donat-tabs__body"> ДРУГИЙ ТАБ</div>
 
@@ -177,10 +177,10 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__box">
-				<div class="footer__form">
+				<div class="footer__form" id="report">
 					<div class="footer__form-text">Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !</div>
 					<form class="footer__form-input">
-						<input autocomplete="off" type="email" name="form[]" data-error="Помилка" placeholder="Твій email" class="input">
+						<input autocomplete="off" type="email" name="form-footer" data-error="Помилка" placeholder="Твій email" class="input">
 						<button type="button" class="footer__form-btn"><span class="_icon-arrowicon"></span></button>
 					</form>
 				</div>
@@ -191,8 +191,8 @@
 					</div>
 					<div class="footer__lists">
 						<ul class="footer__list">
-							<li class="footer__list-item"><a href="#">Звітність</a></li>
-							<li class="footer__list-item"><a href="#">Підписка</a></li>
+							<li class="footer__list-item"><a href="index.html#report">Звітність</a></li>
+							<li class="footer__list-item"><a href="index.html#subs">Підписка</a></li>
 							<li class="footer__list-item"><a href="partners.html">Партнери</a></li>
 							<li class="footer__list-item"><a href="vacancy.html">Вакансії</a></li>
 							<li class="footer__list-item"><a href="help.html">Часті запитання</a> </li>
@@ -221,7 +221,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230621162441"></script>
+	<script src="js/app.min.js?_v=20230622103918"></script>
 </body>
 
 </html>
