@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230622103918">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230623123706">
 
 	<link rel="shortcut icon" href="logo.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -40,7 +40,7 @@
 						<div class="main__img"><picture><source srcset="img/main-car.webp" type="image/webp"><img src="img/main-car.webp" alt="авто"></picture></div>
 						<div class="main__info">
 							<h2 class="main__info-text">Купуємо, ремонтуємо та передаємо авто на фронт нашим захисникам</h2>
-							<button type="button" class="main__info-btn btn"><a href="index.html#donat">Підтримати</a><span class="_icon-arrowicon"></span> </button>
+							<button type="button" class="main__info-btn btn"><a href="index.html#donat">Підтримати </a><span class="_icon-arrowicon"></span></button>
 						</div>
 					</div>
 				</div>
@@ -224,13 +224,17 @@
 											<div class="card-sum__donat">
 												<div class="card-sum__input">
 													<input type="text" placeholder="0" class="input">
-													<div class="sum__input">
-														<div class="sum__input-title btn">UAH</div>
-														<ul class="sum__valuta hidden">
-															<li class="sum__valuta-item">UAH</li>
-															<li class="sum__valuta-item">USD</li>
-															<li class="sum__valuta-item">EUR</li>
-														</ul>
+													<div class="sum__input form-group">
+														<div class="dropdown">
+															<button class="sum__input-title btn dropdown__button">UAH </button>
+															<span class="_icon-chevron-down sum__input-icon"></span>
+															<ul class="sum__valuta hidden">
+																<li class="sum__valuta-item dropdown__list-item" data-value="uah">UAH</li>
+																<li class="sum__valuta-item dropdown__list-item" data-value="usd">USD</li>
+																<li class="sum__valuta-item dropdown__list-item" data-value="eur">EUR</li>
+															</ul>
+															<input type="text" name="select-category" value="" class="dropdown__item-hidden">
+														</div>
 													</div>
 												</div>
 												<div class="card-sum__btns">
@@ -252,7 +256,46 @@
 								</div>
 								<button type="button" class="tab__btn btn" id="subs"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
 							</div>
-							<div class="donat-tabs__body"> ДРУГИЙ ТАБ</div>
+							<div class="donat-tabs__body tab">
+								<div class="tab__card">
+									<div class="tab__card-sum">
+										<div class="card-sum">
+											<label for="" class="tab__card-label">Сума внеску</label>
+											<div class="card-sum__donat">
+												<div class="card-sum__input">
+													<input type="text" placeholder="0" class="input">
+													<div class="sum__input form-group">
+														<div class="dropdown">
+															<button class="sum__input-title btn dropdown__button">UAH </button>
+															<span class="_icon-chevron-down sum__input-icon"></span>
+															<ul class="sum__valuta hidden">
+																<li class="sum__valuta-item dropdown__list-item" data-value="uah">UAH</li>
+																<li class="sum__valuta-item dropdown__list-item" data-value="usd">USD</li>
+																<li class="sum__valuta-item dropdown__list-item" data-value="eur">EUR</li>
+															</ul>
+															<input type="text" name="select-category" value="" class="dropdown__item-hidden">
+														</div>
+													</div>
+												</div>
+												<div class="card-sum__btns">
+													<button type="button" class="card-sum__btn">100 UAH</button>
+													<button type="button" class="card-sum__btn">500 UAH</button>
+													<button type="button" class="card-sum__btn">1000 UAH</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<form class="tab__card-mail">
+										<label for="input-email" class="tab__card-label">Email*</label>
+										<div class="card-mail">
+											<input type="email" class="input" placeholder="Введіть ваш email" id="input-email" name="input-email">
+											<div class="card-mail-text">Вам надійде квітанція на email та ви будете отримувати звітності по вашому внеску</div>
+										</div>
+									</form>
+									<button type="button" class="tab__card-btn btn-blue"><a href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
+								</div>
+								<button type="button" class="tab__btn btn" id="subs"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
+							</div>
 
 							<div class="donat-tabs__body tab">
 								<div class="tab__card invoice">
@@ -263,18 +306,18 @@
 										<li class="list-item"><span class="list-item-title">ЄДРПОУ: </span> 45019226</li>
 										<li class="list-item"><span class="list-item-title">IBAN UAH:</span></li>
 										<li class="list-item">
-											<span class="list-item-title bank">АТ КБ «ПРИВАТБАНК» </span>
-											UA633052990000026005014933699
-											<span class="list-item-copy _icon-copy"></span>
+											<span class="list-item-title bank">АТ КБ «ПРИВАТБАНК»</span>
+											<div class="list-item-text"> UA633052990000026005014933699<span class="_icon-copy"></span></div>
 										</li>
 										<li class="list-item">
 											<span class="list-item-title bank">АТ «Універсал банк»</span>
-											UA103220010000026004170000618
-											<span class="list-item-copy _icon-copy"></span>
+											<div class="list-item-text">UA103220010000026004170000618 <span class="_icon-copy"></span></div>
 										</li>
 										<li class="list-item">
-											<span class="list-item-title bank">АТ «ПУМБ»</span>UA873348510000000026000204673
-											<span class="list-item-copy _icon-copy"></span>
+											<span class="list-item-title bank">АТ «ПУМБ»</span>
+											<div class="list-item-text">UA873348510000000026000204673
+												<span class="_icon-copy"></span>
+											</div>
 										</li>
 									</ul>
 								</div>
@@ -286,8 +329,7 @@
 										<li class="list-item"><span class="list-item-title">Account holder address: </span> 110 office,12А Gagarina avenue, Odesa, 65039, Ukraine</li>
 										<li class="list-item">
 											<span class="list-item-title">IBAN: </span>
-											UA443052990000026006034918626
-											<span class="list-item-copy _icon-copy"></span>
+											<div class="list-item-text">UA443052990000026006034918626 <span class="_icon-copy"></span></div>
 										</li>
 										<li class="list-item"><span class="list-item-title">Bank name: </span>JSC CB "PRIVATBANK"</li>
 										<li class="list-item"><span class="list-item-title">Bank address: </span>1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</li>
@@ -318,7 +360,7 @@
 							<input type="email" placeholder="peremoga@gmail.com" class="contact-item__input input" name="contact-item__email">
 						</div>
 					</div>
-					<button type="button" class="contact-form__btn">Надіслати</button>
+					<button type="button" class="contact-form__btn" data-modal>Надіслати</button>
 				</div>
 			</section>
 		</main>
@@ -358,17 +400,22 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+
+	<!---Popup--->
+
+	<div class="modal">
+		<div class="modal__wrapper">
+			<button data-close type="button" class="modal__close">&times;</button>
+			<!---<div data-close class="modal__close">&times;</div>--->
+			<div class="modal__text">
+				<p>Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.</p>
+				<p>Все буде Україна!</p>
 			</div>
+			<button data-close type="button" class="modal__btn btn-blue"><a href="index.html#donat">Підтримати фонд</a><span class="_icon-arrowicon"></span></button>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230622103918"></script>
+
+	<script src="js/app.min.js?_v=20230623123706"></script>
 </body>
 
 </html>

@@ -3138,6 +3138,57 @@
             }));
         }
     }), 0);
+    const modalTrigger = document.querySelectorAll("[data-modal]"), modal = document.querySelector(".modal"), modalCloseBtn = document.querySelector("[data-close]");
+    modalTrigger.forEach((btn => {
+        btn.addEventListener("click", (() => {
+            modal.classList.add("show");
+            modal.classList.remove("hide");
+            document.body.style.overflow = "hidden";
+        }));
+    }));
+    function closeMode() {
+        modal.classList.add("hide");
+        modal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+    modalCloseBtn.addEventListener("click", closeMode);
+    modal.addEventListener("click", (e => {
+        if (e.target === modal) closeMode();
+    }));
+    document.addEventListener("keydown", (e => {
+        if (e.code === "Escape" && modal.classList.contains("show")) closeMode();
+    }));
+    const btnValuta = document.querySelector(".sum__input-title");
+    const bthArrowValuta = document.querySelector(".sum__input-icon");
+    const listValuta = document.querySelector(".sum__valuta");
+    const itemValuta = listValuta.querySelectorAll(".sum__valuta-item");
+    const dropdownItemHidden = document.querySelector(".dropdown__item-hidden");
+    btnValuta.addEventListener("click", (function() {
+        listValuta.classList.toggle("hidden");
+        bthArrowValuta.classList.toggle("arrow-open");
+        this.classList.add("sum__input-title--active");
+    }));
+    itemValuta.forEach((function(listItem) {
+        listItem.addEventListener("click", (function(e) {
+            e.stopPropagation();
+            btnValuta.innerText = this.innerText;
+            dropdownItemHidden.value = this.dataset.value;
+            listValuta.classList.add("hidden");
+            bthArrowValuta.classList.remove("arrow-open");
+        }));
+    }));
+    document.addEventListener("click", (function(e) {
+        if (e.target !== btnValuta) {
+            listValuta.classList.add("hidden");
+            bthArrowValuta.classList.remove("arrow-open");
+        }
+    }));
+    document.addEventListener("keydown", (function(e) {
+        if (e.key === "Tab" || e.key === "Escape") {
+            listValuta.classList.add("hidden");
+            bthArrowValuta.classList.remove("arrow-open");
+        }
+    }));
     window["FLS"] = true;
     isWebp();
     spollers();
