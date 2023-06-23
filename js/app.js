@@ -3114,7 +3114,7 @@
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 0,
             autoHeight: true,
             speed: 800,

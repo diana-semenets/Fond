@@ -1567,6 +1567,25 @@ h6 {
   color: #1A1A1A;
 }
 
+.tab__mono-btn {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 30px 40px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.tab__mono-btn:hover {
+  background-color: #fff;
+  color: #1A1A1A;
+}
+
 .card-sum {
   max-width: 658px;
 }
@@ -2601,11 +2620,16 @@ h6 {
     padding: 28px 16px;
   }
 
-  .header__logo {
+  .modal__wrapper {
+    max-width: 600px;
+    padding: 70px;
+  }
+
+  .header-page__logo {
     padding-left: 24px;
   }
 
-  .header__logo-text {
+  .header-page__logo-text {
     display: none;
   }
 
@@ -2713,6 +2737,10 @@ h6 {
     line-height: 20px;
   }
 
+  .footer__form-btn {
+    top: 8px;
+  }
+
   .title {
     line-height: 44px;
   }
@@ -2782,7 +2810,7 @@ h6 {
   }
 
   .join__box {
-    margin-top: -250px;
+    margin-top: -300px;
   }
 
   .items-item-btn {
@@ -2800,6 +2828,10 @@ h6 {
 
   .progress__slide {
     height: 100%;
+  }
+
+  .progress__btn {
+    border: none;
   }
 
   .donat-tabs__navigation {
@@ -2828,8 +2860,13 @@ h6 {
     line-height: 30px;
   }
 
+  .sum__input {
+    width: 83px;
+  }
+
   .sum__input-title {
     width: 83px;
+    height: 56px;
     padding: 18px 12px;
     font-size: 14px;
     line-height: 17px;
@@ -2840,6 +2877,14 @@ h6 {
     padding: 9.5px 0;
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .sum__valuta {
+    width: 83px;
+  }
+
+  .sum__valuta-item {
+    font-size: 18px;
   }
 
   .card-mail input {
@@ -2863,6 +2908,11 @@ h6 {
     line-height: 20px;
   }
 
+  .tab__mono-btn {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
   .invoice-title {
     margin-top: 24px;
     font-size: 16px;
@@ -2873,6 +2923,11 @@ h6 {
     margin-bottom: 12px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .sum__input-icon {
+    top: 20px;
+    right: 85px;
   }
 
   .contact-form {
@@ -2900,7 +2955,21 @@ h6 {
     line-height: 20px;
   }
 
-  .header__box {
+  .modal__wrapper {
+    max-width: 450px;
+    padding: 50px 30px;
+  }
+
+  .modal__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .modal__btn a {
+    font-size: 20px;
+  }
+
+  .header-page__box {
     -ms-grid-columns: 20% 50% 30%;
     grid-template-columns: 20% 50% 30%;
   }
@@ -2984,6 +3053,15 @@ h6 {
   .partner__content,
   .vacancy__content {
     display: block;
+  }
+
+  .help__item-title {
+    font-size: 16px;
+  }
+
+  .help__item-info {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
