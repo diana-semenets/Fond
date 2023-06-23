@@ -717,6 +717,20 @@ h6 {
   font-weight: 800;
   margin: 62px 0 28px;
   text-transform: uppercase;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  position: relative;
+  /*    .first {
+          animation-name: first; 
+          animation-duration: 2s; 
+          animation-timing-function: ease; 
+          position: relative;        
+      }
+       */
 }
 
 @supports (font-size: clamp( 3.375rem , 1.9204545455rem  +  7.2727272727vw , 7.375rem )) {
@@ -764,6 +778,13 @@ h6 {
   font-weight: 600;
   font-size: 28px;
   line-height: 37px;
+  -webkit-animation-name: second;
+          animation-name: second;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  position: relative;
 }
 
 .main__info-btn {
@@ -794,6 +815,46 @@ h6 {
 .main__img img {
   width: 100%;
   opacity: 0.2;
+}
+
+@-webkit-keyframes first {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes first {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes second {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes second {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0%;
+  }
 }
 
 .info {
