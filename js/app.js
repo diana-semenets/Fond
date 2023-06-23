@@ -3189,6 +3189,182 @@
             bthArrowValuta.classList.remove("arrow-open");
         }
     }));
+    const langButtons = document.querySelectorAll("[data-btn]");
+    const allLangs = [ "ukr", "en" ];
+    const currentPathName = window.location.pathname;
+    let currentLang = localStorage.getItem("language") || checkBrowserLang() || "ukr";
+    let currentTexts = {};
+    const homeTexts = {
+        "home_page-1": {
+            ukr: "авто для зсу",
+            en: "Cars for armed forces"
+        },
+        "home_page-2": {
+            ukr: "Купуємо, ремонтуємо та передаємо авто на фронт нашим захисникам",
+            en: "We purchase, repair and transfer cars to the front line  to our defenders"
+        },
+        "home_page-3": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-4": {
+            ukr: "Ми – Волонтерський Рух України",
+            en: "We are the Volunteer Movement of Ukraine"
+        },
+        "home_page-5": {
+            ukr: "Про Благодійний фонд",
+            en: "About the Charitable Fund"
+        },
+        "home_page-6": {
+            ukr: "Благодійний Фонд створено з метою надання  підтримки захисникам України. А саме ми займаємося закупівлею позашляховиків та мінібусів.",
+            en: "The Charitable Fund was created to provide support to defenders of Ukraine. Specifically, we purchase Hyundai off-roaders and minivans."
+        },
+        "home_page-7": {
+            ukr: "У нас відкрито збір на авто для ЗСУ. Приєднуйтесь! Все буде Україна!",
+            en: "We launch a fundraiser to purchase cars for the Armed Forces of Ukraine. Join us and support Ukraine!"
+        },
+        "home_page-8": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-9": {
+            ukr: "Наші партнери",
+            en: "Our partners"
+        },
+        "home_page-10": {
+            ukr: "Офіційний сервіс",
+            en: "Official service"
+        },
+        "home_page-11": {
+            ukr: "Дніпро, Україна",
+            en: "Dnipro, Ukraine"
+        },
+        "home_page-12": {
+            ukr: "Офіційний сервіс",
+            en: "Official service"
+        },
+        "home_page-13": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "home_page-14": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "home_page-15": {
+            ukr: "Офіційний сервіс",
+            en: "Official service"
+        },
+        "home_page-16": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "home_page-17": {
+            ukr: "Кропивницький, Україна",
+            en: "Kropyvnytskyi, Ukraine"
+        },
+        "home_page-18": {
+            ukr: "Офіційний сервіс",
+            en: "Official service"
+        },
+        "home_page-19": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "home_page-20": {
+            ukr: "Офіційний сервіс",
+            en: "Official service"
+        },
+        "home_page-21": {
+            ukr: "Кропивницький, Україна",
+            en: "Kropyvnytskyi, Ukraine"
+        },
+        "home_page-22": {
+            ukr: "Більше про партнерів",
+            en: "More about partners"
+        },
+        "home_page-23": {
+            ukr: "Найпоширеніші авто, що ми закуповуємо",
+            en: "Types of cars our foundation purchase"
+        },
+        "home_page-24": {
+            ukr: "Позашляховики",
+            en: "Off-roaders"
+        },
+        "home_page-25": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-26": {
+            ukr: "Мікроавтобуси",
+            en: "Minivans"
+        },
+        "home_page-27": {
+            ukr: "Підтримати",
+            en: "Support"
+        }
+    };
+    function checkPagePathName() {
+        switch (currentPathName) {
+          case "/index.html":
+            currentTexts = homeTexts;
+            break;
+
+          case "/another_page.html":
+            currentTexts = anotherTexts;
+            break;
+
+          default:
+            currentTexts = homeTexts;
+            break;
+        }
+    }
+    checkPagePathName();
+    function changeLang() {
+        for (const key in currentTexts) {
+            let elem = document.querySelector(`[data-lang=${key}]`);
+            if (elem) elem.textContent = currentTexts[key][currentLang];
+        }
+    }
+    changeLang();
+    langButtons.forEach((btn => {
+        btn.addEventListener("click", (event => {
+            if (!event.target.classList.contains("header__btns-btn--active")) {
+                currentLang = event.target.dataset.btn;
+                localStorage.setItem("language", event.target.dataset.btn);
+                resetActiveClass(langButtons, "header__btns-btn--active");
+                btn.classList.add("header__btns-btn--active");
+                changeLang();
+            }
+        }));
+    }));
+    function resetActiveClass(arr, activeClass) {
+        arr.forEach((elem => {
+            elem.classList.remove(activeClass);
+        }));
+    }
+    function checkActiveLangButton() {
+        switch (currentLang) {
+          case "ukr":
+            document.querySelector('[data-btn="ukr"]').classList.add("header__btn_active");
+            break;
+
+          case "en":
+            document.querySelector('[data-btn="en"]').classList.add("header__btn_active");
+            break;
+
+          default:
+            document.querySelector('[data-btn="ukr"]').classList.add("header__btn_active");
+            break;
+        }
+    }
+    checkActiveLangButton();
+    function checkBrowserLang() {
+        const navLang = navigator.language.slice(0, 2).toLowerCase();
+        const result = allLangs.some((elem => elem === navLang));
+        if (result) return navLang;
+    }
+    console.log("navigator.language", checkBrowserLang());
     window["FLS"] = true;
     isWebp();
     spollers();
