@@ -3302,6 +3302,166 @@
         "home_page-27": {
             ukr: "Підтримати",
             en: "Support"
+        },
+        "home_page-28": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-29": {
+            ukr: "Запит на авто",
+            en: "Request for a car"
+        },
+        "home_page-30": {
+            ukr: "Чому важливо донатити на авто для ЗСУ?",
+            en: "Why is it important to donate on a car for the Armed Forces?"
+        },
+        "home_page-31": {
+            ukr: "Автомобілі на фронті відіграють дуже важливу роль у веденні бойових дій, адже завдяки ним наші захисники мають змогу проводити розвідувальні операції, транспортувати потерпілих з гарячих точок та підвищувати свою мобільність.",
+            en: "Cars at the front play a very important role in the conduct of hostilities, because thanks to them, our defenders are able to conduct reconnaissance operations, transport victims from hot spots and increase their mobility."
+        },
+        "home_page-32": {
+            ukr: "Нажаль, автомоболі на фронті є розхідним матеріалом, тому гостра потреба в них залишається завжди.",
+            en: "Unfortunately, the life of cars at the front line is very fleeting, so there is always an urgent need for them."
+        },
+        "home_page-33": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-34": {
+            ukr: "Як ти можеш долучитись?",
+            en: "How can you get involved?"
+        },
+        "home_page-35": {
+            ukr: "Як ти можеш долучитись?",
+            en: "How can you get involved?"
+        },
+        "home_page-36": {
+            ukr: "Давай наближувати перемогу разом!",
+            en: "Let's get closer to victory together!"
+        },
+        "home_page-37": {
+            ukr: "Зробити внесок",
+            en: "Make a donation"
+        },
+        "home_page-38": {
+            ukr: "Для нас буде великою цінністю, якщо ти будеш ділитися із друзями та знайомими нашою ініціативою. Це буде твоїм дуже вагомим внеском у досягнення нашої спільної мети!",
+            en: "It will be of great value to us if you share our initiative with your friends. This will be your very significant contribution to achieving our common goal!"
+        },
+        "home_page-39": {
+            ukr: "Поділитись сайтом",
+            en: "Share a website"
+        },
+        "home_page-40": {
+            ukr: "Ви можете подати запит на авто для військової частини в містах. Для цього необхідно перейти за посиланням та заповнити форму зворотнього зв’язку.",
+            en: "You can submit a request for a car for a military unit. To do this, you need to follow the link and fill out the feedback form."
+        },
+        "home_page-41": {
+            ukr: "Запит на авто",
+            en: "Request for a car"
+        },
+        "home_page-42": {
+            ukr: "Наші досягнення",
+            en: "Our achievements"
+        },
+        "home_page-43": {
+            ukr: "Переказ карткою",
+            en: "Transfer by card"
+        },
+        "home_page-44": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-45": {
+            ukr: "Реквізити",
+            en: "Bank details"
+        },
+        "home_page-46": {
+            ukr: "Підтримати збір на авто для ЗСУ",
+            en: "Support the fundraising for cars for the Armed Forces of Ukraine"
+        },
+        "home_page-47": {
+            ukr: "Сума внеску",
+            en: "Contribution amount"
+        },
+        "home_page-48": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-49": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-50": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-51": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-52": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-53": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-54": {
+            ukr: "Реквізити",
+            en: "Bank details in Ukraine"
+        },
+        "home_page-55": {
+            ukr: "Перекази в іноземній валюті",
+            en: "International bank transfers"
+        },
+        "home_page-56": {
+            ukr: "Заповнюйте форму і ми з вами зв’яжемось",
+            en: "Fill out the form and we will contact you"
+        },
+        "home_page-57": {
+            ukr: "Ім’я",
+            en: "Name"
+        },
+        "home_page-58": {
+            ukr: "Номер телефону",
+            en: "Phone number"
+        },
+        "home_page-59": {
+            ukr: "Надіслати",
+            en: "Send"
+        },
+        "home_page-60": {
+            ukr: "Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !",
+            en: "Leave your e-mail and receive reports on the fund's activities. Always be informed!"
+        },
+        "home_page-61": {
+            ukr: "Звітність",
+            en: "Reports"
+        },
+        "home_page-62": {
+            ukr: "Підписка",
+            en: "Subscription"
+        },
+        "home_page-63": {
+            ukr: "Партнери",
+            en: "Partners"
+        },
+        "home_page-64": {
+            ukr: "Вакансії",
+            en: "Vacansies"
+        },
+        "home_page-65": {
+            ukr: "Часті запитання",
+            en: "FAQ"
+        },
+        "home_page-66": {
+            ukr: "Інформаційна лінія",
+            en: "Information line"
+        },
+        "home_page-67": {
+            ukr: "Підтримати",
+            en: "Support"
         }
     };
     function checkPagePathName() {
