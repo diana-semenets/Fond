@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230624145436">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230625015823">
 
 	<link rel="shortcut icon" href="logo.ico">
 	<meta name="Волонтерський Рух України" content="Волонтерський Рух України, збір коштів на машини для ЗСУ">
@@ -23,12 +23,12 @@
 					<div class="header__logo-text">Волонтерський Рух України</div>
 				</div>
 				<ul class="header__nav">
-					<li class="header__nav-item"><a href="index.html#donat">Підтримати</a></li>
-					<li class="header__nav-item avto"><a href="#">Запит на авто</a></li>
+					<li class="header__nav-item"><a href="index.html#donat" data-lang="help_page-17">Підтримати</a></li>
+					<li class="header__nav-item avto"><a href="index.html#contact-form" data-lang="help_page-18">Запит на авто</a></li>
 				</ul>
 				<div class="header-page__btns">
-					<button class="header__btns-btn">UA</button>
-					<button class="header__btns-btn">EN</button>
+					<button class="header__btns-btn header__btns-btn--active" data-btn="ukr">UA</button>
+					<button class="header__btns-btn" data-btn="en">EN</button>
 				</div>
 			</div>
 		</header>
@@ -37,20 +37,27 @@
 				<div class="vacancy__box" id="donat">
 					<button type="button" class="vacancy__btn"><a href="index.html"><span class="_icon-arrow-left"></a></button>
 					<div class="vacancy__content">
-						<div class="vacancy__title title">Вакансії</div>
+						<div class="vacancy__title title" data-lang="vacancy_page-1">Вакансії</div>
 						<div class="vacancy__items">
 							<div class="vacancy__items-item vacancy__item">
-								<div class="vacancy__item-title"><span class="vacancy__item-name">Координатор юриста</span><span class="_icon-arrowicon"></span></div>
+								<div class="vacancy__item-title"><span class="vacancy__item-name" data-lang="vacancy_page-2">Координатор юриста</span><span class="_icon-arrowicon"></span></div>
 								<div class="vacancy__item-info">
 									<div class="vacancy__item-work"><a href="#">work.ua</a></div>
-									<div class="vacancy__item-place">Одеса, Україна <br>вул. Гагаріна, 12 а</div>
+									<div>
+										<p class="vacancy__item-place" data-lang="vacancy_page-3">Одеса, Україна</p>
+										<p class="vacancy__item-street" data-lang="vacancy_page-4">вул. Гагаріна, 12 а</p>
+									</div>
 								</div>
 							</div>
 							<div class="vacancy__items-item vacancy__item">
-								<div class="vacancy__item-title"><span class="vacancy__item-name">Регіональний координатор БФ</span><span class="_icon-arrowicon"></span></div>
+								<div class="vacancy__item-title"><span class="vacancy__item-name" data-lang="vacancy_page-5">Регіональний координатор БФ</span><span class="_icon-arrowicon"></span></div>
 								<div class="vacancy__item-info">
 									<div class="vacancy__item-work"><a href="#">work.ua</a></div>
-									<div class="vacancy__item-place">Одеса, Україна <br>вул. Гагаріна, 12 а</div>
+									<div>
+										<p class="vacancy__item-place" data-lang="vacancy_page-6">Одеса, Україна </p>
+										<p class="vacancy__item-street" data-lang="vacancy_page-7">вул. Гагаріна, 12 а</p>
+									</div>
+
 								</div>
 							</div>
 						</div>
@@ -63,17 +70,17 @@
 				<div class="donat__box">
 					<div data-tabs class="donat-tabs" id="donat">
 						<nav data-tabs-titles class="donat-tabs__navigation">
-							<button type="button" class="donat-tabs__title _tab-active">Переказ карткою</button>
-							<button type="button" class="donat-tabs__title">Mono банка</button>
-							<button type="button" class="donat-tabs__title">Реквізити</button>
+							<button type="button" class="donat-tabs__title _tab-active" data-lang="home_page-43">Переказ карткою</button>
+							<button type="button" class="donat-tabs__title" data-lang="home_page-44">Mono банка</button>
+							<button type="button" class="donat-tabs__title" data-lang="home_page-45">Реквізити</button>
 						</nav>
-						<h3 class="donat-title title">Підтримати збір на авто для ЗСУ</h3>
+						<h3 class="donat-title title" data-lang="home_page-46">Підтримати збір на авто для ЗСУ</h3>
 						<div data-tabs-body class="donat-tabs__content">
 							<div class="donat-tabs__body tab">
 								<div class="tab__card">
 									<div class="tab__card-sum">
 										<div class="card-sum">
-											<label for="" class="tab__card-label">Сума внеску</label>
+											<label for="" class="tab__card-label" data-lang="home_page-47">Сума внеску</label>
 											<div class="card-sum__donat">
 												<div class="card-sum__input">
 													<input type="text" placeholder="0" class="input">
@@ -102,34 +109,34 @@
 										<label for="input-email" class="tab__card-label">Email*</label>
 										<div class="card-mail">
 											<input type="email" class="input" placeholder="Введіть ваш email" id="input-email" name="input-email">
-											<div class="card-mail-text">Вам надійде квітанція на email та ви будете отримувати звітності по вашому внеску</div>
+											<div class="card-mail-text" data-lang="home_page-48">Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску</div>
 										</div>
 									</form>
-									<button type="button" class="tab__card-btn btn-blue"><a href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
+									<button type="button" class="tab__card-btn btn-blue"><a data-lang="home_page-49" href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
 								</div>
-								<button type="button" class="tab__btn btn" id="subs"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
+								<button type="button" class="tab__btn btn" id="subs"><a href="#" data-lang="home_page-50">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
 							</div>
 
 							<div class="donat-tabs__body tab">
 								<div class="tab__card">
 									<div class="tab__card-sum">
-										<button type="button" class="tab__mono-btn btn"><a href="#">Mono банка</a><span class="_icon-arrowicon"></span></button>
+										<button type="button" class="tab__mono-btn btn"><a href="#" data-lang="home_page-51">Mono банка</a><span class="_icon-arrowicon"></span></button>
 									</div>
 									<form class="tab__card-mail">
 										<label for="input-email" class="tab__card-label">Email*</label>
 										<div class="card-mail">
 											<input type="email" class="input" placeholder="Введіть ваш email" id="input-email" name="input-email">
-											<div class="card-mail-text">Вам надійде квітанція на email та ви будете отримувати звітності по вашому внеску</div>
+											<div class="card-mail-text" data-lang="home_page-52">Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску</div>
 										</div>
 									</form>
 
 								</div>
-								<button type="button" class="tab__btn btn" id="subs"><a href="#">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
+								<button type="button" class="tab__btn btn" id="subs"><a href="#" data-lang="home_page-53">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
 							</div>
 
 							<div class="donat-tabs__body tab">
 								<div class="tab__card invoice">
-									<div class="invoice-title">Реквізити в Україні</div>
+									<div class="invoice-title" data-lang="home_page-54">Реквізити в Україні</div>
 									<ul class="invoice-list list">
 										<li class="list-item"><span class="list-item-title">Отримувач: </span>Благодійний фонд «Волонтерський Рух україни» </li>
 										<li class="list-item"><span class="list-item-title">Адреса отримувача: </span>Одеса 65039, пр.Гагаріна, 12а, офіс 110</li>
@@ -153,7 +160,7 @@
 								</div>
 
 								<div class="tab__card invoice">
-									<div class="invoice-title">Перекази в іноземній валюті</div>
+									<div class="invoice-title" data-lang="home_page-55">Перекази в іноземній валюті</div>
 									<ul class="invoice-list list">
 										<li class="list-item"><span class="list-item-title">Account holder: </span> CHARITABLE FUND "VOLUNTEER MOVEMENT OF UKRAINE" </li>
 										<li class="list-item"><span class="list-item-title">Account holder address: </span> 110 office,12А Gagarina avenue, Odesa, 65039, Ukraine</li>
@@ -174,15 +181,15 @@
 			</section>
 
 			<section class="contact-form">
-				<div class="contact-form__box">
-					<div class="contact-form__title">Заповнюйте форму і ми з вами зв’яжемось</div>
+				<div class="contact-form__box" id="contact-form">
+					<div class="contact-form__title" data-lang="home_page-56">Заповнюйте форму і ми з вами зв’яжемось</div>
 					<div class="contact-form__content">
 						<div class="contact-form__item contact-item">
-							<label for="" class="tab__card-label contact-item__label">Ім’я</label>
+							<label for="" class="tab__card-label contact-item__label" data-lang="home_page-57">Ім’я</label>
 							<input type="text" placeholder="Перемога" class="contact-item__input input" name="contact-item__name">
 						</div>
 						<div class="contact-form__item contact-item">
-							<label for="" class="tab__card-label contact-item__label">Номер телефону</label>
+							<label for="" class="tab__card-label contact-item__label" data-lang="home_page-58">Номер телефону</label>
 							<input type="tel" placeholder="+3806711111111" class="contact-item__input input" name="contact-item__tel">
 						</div>
 						<div class="contact-form__item contact-item">
@@ -190,9 +197,10 @@
 							<input type="email" placeholder="peremoga@gmail.com" class="contact-item__input input" name="contact-item__email">
 						</div>
 					</div>
-					<button type="button" class="contact-form__btn" data-modal>Надіслати</button>
+					<button type="button" class="contact-form__btn" data-modal data-lang="home_page-59">Надіслати</button>
 				</div>
 			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__box">
@@ -205,7 +213,7 @@
 				</div>
 				<div class="footer__content">
 					<div class="footer__logo">
-						<div class="footer__logo-img"><a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="логотип Волонтерський Рух України"></picture></a></div>
+						<div class="footer__logo-img"><a href="index.html"><picture><source srcset="img/logo1.webp" type="image/webp"><img src="img/logo1.png" alt="логотип Волонтерський Рух України"></picture></a></div>
 						<div class="footer__logo-text">Волонтерський Рух України</div>
 					</div>
 					<div class="footer__lists">
@@ -231,21 +239,21 @@
 		</footer>
 	</div>
 
-	<!---Popup--->
+
 
 	<div class="modal">
 		<div class="modal__wrapper">
 			<button data-close type="button" class="modal__close">&times;</button>
 			<!---<div data-close class="modal__close">&times;</div>--->
 			<div class="modal__text">
-				<p>Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.</p>
-				<p>Все буде Україна!</p>
+				<p data-lang="home_page-68">Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.</p>
+				<p data-lang="home_page-69">Все буде Україна!</p>
 			</div>
-			<button data-close type="button" class="modal__btn btn-blue"><a href="vacancy.html#donat">Підтримати збір</a><span class="_icon-arrowicon"></span></button>
+			<button data-close type="button" class="modal__btn btn-blue"><a href="index.html#donat" data-lang="home_page-70">Підтримати збір</a><span class="_icon-arrowicon"></span></button>
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20230624145436"></script>
+	<script src="js/app.min.js?_v=20230625015823"></script>
 </body>
 
 </html>

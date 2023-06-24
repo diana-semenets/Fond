@@ -3462,6 +3462,528 @@
         "home_page-67": {
             ukr: "Підтримати",
             en: "Support"
+        },
+        "home_page-68": {
+            ukr: "Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.",
+            en: "text?"
+        },
+        "home_page-69": {
+            ukr: "Все буде Україна!",
+            en: "text?"
+        },
+        "home_page-70": {
+            ukr: "Підтримати збір",
+            en: "Support ???"
+        }
+    };
+    const partnersTexts = {
+        "partners_page-1": {
+            ukr: "Наші партнери",
+            en: "Our partners"
+        },
+        "partners_page-2": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-3": {
+            ukr: "Дніпро, Україна",
+            en: "Dnipro, Ukraine"
+        },
+        "partners_page-4": {
+            ukr: "Запорізьке шосе, 59",
+            en: "59, Zaporizhia highway"
+        },
+        "partners_page-5": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-6": {
+            ukr: "Кропивницький, Україна",
+            en: "Kropyvnytskyi, Ukraine"
+        },
+        "partners_page-7": {
+            ukr: "вул. Вокзальна, 60-А",
+            en: "St. Vokzalna, 60-A"
+        },
+        "partners_page-8": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-9": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "partners_page-10": {
+            ukr: "вул. 30 років Перемоги, 7/2",
+            en: "St. 30 years of Victory, 7/2"
+        },
+        "partners_page-11": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-12": {
+            ukr: "Кропивницький, Україна",
+            en: "Kropyvnytskyi, Ukraine"
+        },
+        "partners_page-13": {
+            ukr: "пр-т Винниченка, 2",
+            en: "2 Vinnychenka Ave"
+        },
+        "partners_page-14": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-15": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "partners_page-16": {
+            ukr: "вул. 30 років Перемоги, 7/2",
+            en: "St. 30 years of Victory, 7/2"
+        },
+        "partners_page-17": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-18": {
+            ukr: "Кропивницький, Україна",
+            en: "Kropyvnytskyi, Ukraine"
+        },
+        "partners_page-19": {
+            ukr: "пр-т Винниченка, 2",
+            en: "2 Vinnychenka Ave"
+        },
+        "partners_page-20": {
+            ukr: "Посилання на сайт",
+            en: "website"
+        },
+        "partners_page-21": {
+            ukr: "Черкаси, Україна",
+            en: "Cherkasy, Ukraine"
+        },
+        "partners_page-22": {
+            ukr: "вул. Чигиринська, 60/2",
+            en: "St. Chygyrinska, 60/2"
+        },
+        "help_page-17": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "help_page-18": {
+            ukr: "Запит на авто",
+            en: "Request for a car"
+        },
+        "home_page-43": {
+            ukr: "Переказ карткою",
+            en: "Transfer by card"
+        },
+        "home_page-44": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-45": {
+            ukr: "Реквізити",
+            en: "Bank details"
+        },
+        "home_page-46": {
+            ukr: "Підтримати збір на авто для ЗСУ",
+            en: "Support the fundraising for cars for the Armed Forces of Ukraine"
+        },
+        "home_page-47": {
+            ukr: "Сума внеску",
+            en: "Contribution amount"
+        },
+        "home_page-48": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-49": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-50": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-51": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-52": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-53": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-54": {
+            ukr: "Реквізити",
+            en: "Bank details in Ukraine"
+        },
+        "home_page-55": {
+            ukr: "Перекази в іноземній валюті",
+            en: "International bank transfers"
+        },
+        "home_page-56": {
+            ukr: "Заповнюйте форму і ми з вами зв’яжемось",
+            en: "Fill out the form and we will contact you"
+        },
+        "home_page-57": {
+            ukr: "Ім’я",
+            en: "Name"
+        },
+        "home_page-58": {
+            ukr: "Номер телефону",
+            en: "Phone number"
+        },
+        "home_page-59": {
+            ukr: "Надіслати",
+            en: "Send"
+        },
+        "home_page-60": {
+            ukr: "Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !",
+            en: "Leave your e-mail and receive reports on the fund's activities. Always be informed!"
+        },
+        "home_page-61": {
+            ukr: "Звітність",
+            en: "Reports"
+        },
+        "home_page-62": {
+            ukr: "Підписка",
+            en: "Subscription"
+        },
+        "home_page-63": {
+            ukr: "Партнери",
+            en: "Partners"
+        },
+        "home_page-64": {
+            ukr: "Вакансії",
+            en: "Vacansies"
+        },
+        "home_page-65": {
+            ukr: "Часті запитання",
+            en: "FAQ"
+        },
+        "home_page-66": {
+            ukr: "Інформаційна лінія",
+            en: "Information line"
+        },
+        "home_page-67": {
+            ukr: "Підтримати",
+            en: "Support"
+        }
+    };
+    const vacancyTexts = {
+        "vacancy_page-1": {
+            ukr: "Вакансії",
+            en: "Vacansies"
+        },
+        "vacancy_page-2": {
+            ukr: "Координатор юриста",
+            en: "Lawyer coordinator"
+        },
+        "vacancy_page-3": {
+            ukr: "Одеса, Україна",
+            en: "Odesa, Ukraine"
+        },
+        "vacancy_page-4": {
+            ukr: "вул. Гагаріна, 12 а",
+            en: "St. Gagarina, 12 a"
+        },
+        "vacancy_page-5": {
+            ukr: "Регіональний координатор БФ",
+            en: "Regional coordinator of foundation"
+        },
+        "vacancy_page-6": {
+            ukr: "Одеса, Україна",
+            en: "Odesa, Ukraine"
+        },
+        "vacancy_page-7": {
+            ukr: "вул. Гагаріна, 12 а",
+            en: "St. Gagarina, 12 a"
+        },
+        "help_page-17": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "help_page-18": {
+            ukr: "Запит на авто",
+            en: "Request for a car"
+        },
+        "home_page-43": {
+            ukr: "Переказ карткою",
+            en: "Transfer by card"
+        },
+        "home_page-44": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-45": {
+            ukr: "Реквізити",
+            en: "Bank details"
+        },
+        "home_page-46": {
+            ukr: "Підтримати збір на авто для ЗСУ",
+            en: "Support the fundraising for cars for the Armed Forces of Ukraine"
+        },
+        "home_page-47": {
+            ukr: "Сума внеску",
+            en: "Contribution amount"
+        },
+        "home_page-48": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-49": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-50": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-51": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-52": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-53": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-54": {
+            ukr: "Реквізити",
+            en: "Bank details in Ukraine"
+        },
+        "home_page-55": {
+            ukr: "Перекази в іноземній валюті",
+            en: "International bank transfers"
+        },
+        "home_page-56": {
+            ukr: "Заповнюйте форму і ми з вами зв’яжемось",
+            en: "Fill out the form and we will contact you"
+        },
+        "home_page-57": {
+            ukr: "Ім’я",
+            en: "Name"
+        },
+        "home_page-58": {
+            ukr: "Номер телефону",
+            en: "Phone number"
+        },
+        "home_page-59": {
+            ukr: "Надіслати",
+            en: "Send"
+        },
+        "home_page-60": {
+            ukr: "Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !",
+            en: "Leave your e-mail and receive reports on the fund's activities. Always be informed!"
+        },
+        "home_page-61": {
+            ukr: "Звітність",
+            en: "Reports"
+        },
+        "home_page-62": {
+            ukr: "Підписка",
+            en: "Subscription"
+        },
+        "home_page-63": {
+            ukr: "Партнери",
+            en: "Partners"
+        },
+        "home_page-64": {
+            ukr: "Вакансії",
+            en: "Vacansies"
+        },
+        "home_page-65": {
+            ukr: "Часті запитання",
+            en: "FAQ"
+        },
+        "home_page-66": {
+            ukr: "Інформаційна лінія",
+            en: "Information line"
+        },
+        "home_page-67": {
+            ukr: "Підтримати",
+            en: "Support"
+        }
+    };
+    const helpTexts = {
+        "help_page-1": {
+            ukr: "Часті запитання",
+            en: "FAQ"
+        },
+        "help_page-2": {
+            ukr: "Кому допомагає фонд?",
+            en: "Who does the fund help?"
+        },
+        "help_page-3": {
+            ukr: "Фонд закуповує та передає авто військовим частинам ЗСУ. Також фонд забезпечує сервісний ремонт авто, що видає та надає безкоштовний технічний супровід та ремонт для кожного переданого автомобіля на сервісних станціях наших партнерів Української Автомобільної Групи «АВТОКРАФТ».",
+            en: 'The fund purchases and transfers cars to the military units of the Armed Forces of Ukraine. The fund also provides car service repair, issuing and providing free technical support and repair for each transferred car at the service stations of our partners of the Ukrainian Automotive Group "AUTOKRAFT".'
+        },
+        "help_page-4": {
+            ukr: "Подати запит на авто",
+            en: "Submit a request for a car"
+        },
+        "help_page-5": {
+            ukr: "Як отримати допомогу від фонду?",
+            en: "How to get help from the fund?"
+        },
+        "help_page-6": {
+            ukr: "Для того щоб отримати автівку для військової частини, вам необхідно заповнити форму зворотнього зв’язку. З вами зв’яжуться наші спеціалісти та опрацюють ваш запит",
+            en: "In order to get a car for a military unit, you need to fill out a feedback form. Our specialists will contact you and process your request"
+        },
+        "help_page-7": {
+            ukr: "Подати запит на авто",
+            en: "Submit a request for a car"
+        },
+        "help_page-8": {
+            ukr: "Чому тільки авто?",
+            en: "Why only cars?"
+        },
+        "help_page-9": {
+            ukr: "Авто відіграють дуже важливу роль на фронті. Завдяки нашим партнерам сервісним центрам, ми не тільки закуповуємо автомобілі, ми також проводимо ретельну перевірку їх технічного стану, виправляємо недоліки та перефарбовуємо.",
+            en: "Cars play a very important role at the front line. Thanks to our partners – service centers, we not only buy cars, we also carry out a thorough inspection of their technical condition, correct defects and repaint."
+        },
+        "help_page-10": {
+            ukr: "Для кожного переданого ЗСУ автомобіля ми забезпечуємо безкоштовний технічний супровід та ремонт на сервісних станціях наших партнерів Української Автомобільної Групи «АВТОКРАФТ».",
+            en: 'For each transferred car for the Armed Forces, we provide free technical support and repair at the service stations of our partners of the Ukrainian Automotive Group "AUTOKRAFT".'
+        },
+        "help_page-11": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "help_page-12": {
+            ukr: "Які авто надає фонд?",
+            en: "What cars does the fund provide?"
+        },
+        "help_page-13": {
+            ukr: "Фонд закуповує позашляховики та мінібуси Hyundai. Наш партнер сервісний центр Hyundai у місті Дніпро видає автомобілі та забезпечує їх технічний супровід.",
+            en: "The fund purchase Hyundai off-roaders and minivans. Our partner, the Hyundai service center in Dnipro, issues cars and provides their technical support."
+        },
+        "help_page-14": {
+            ukr: "В подальшому за вашої підтримки, ми плануємо масшабуватись та задіювати сервісні центри наших партнерів у містах Черкаси та Кропівницький. Так ми зможемо допомогти більшій кількості наших військових, забезпечивши іх автомобілями та безкоштовним технічним супровідом.",
+            en: "In the future, with your support, we plan to expand and use the service centers of our partners in the cities of Cherkasy and Kropyvnytskyi. So we will be able to help more of our military by providing them with cars and free technical support."
+        },
+        "help_page-15": {
+            ukr: "Подати запит на авто",
+            en: "Submit a request for a car"
+        },
+        "help_page-16": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "help_page-17": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "help_page-18": {
+            ukr: "Запит на авто",
+            en: "Request for a car"
+        },
+        "home_page-43": {
+            ukr: "Переказ карткою",
+            en: "Transfer by card"
+        },
+        "home_page-44": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-45": {
+            ukr: "Реквізити",
+            en: "Bank details"
+        },
+        "home_page-46": {
+            ukr: "Підтримати збір на авто для ЗСУ",
+            en: "Support the fundraising for cars for the Armed Forces of Ukraine"
+        },
+        "home_page-47": {
+            ukr: "Сума внеску",
+            en: "Contribution amount"
+        },
+        "home_page-48": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-49": {
+            ukr: "Підтримати",
+            en: "Support"
+        },
+        "home_page-50": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-51": {
+            ukr: "Mono банка",
+            en: "Monobank"
+        },
+        "home_page-52": {
+            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
+            en: "You will receive a receipt by email and you will receive reports on your contribution"
+        },
+        "home_page-53": {
+            ukr: "Оформити підписку",
+            en: "Get a subscription"
+        },
+        "home_page-54": {
+            ukr: "Реквізити",
+            en: "Bank details in Ukraine"
+        },
+        "home_page-55": {
+            ukr: "Перекази в іноземній валюті",
+            en: "International bank transfers"
+        },
+        "home_page-56": {
+            ukr: "Заповнюйте форму і ми з вами зв’яжемось",
+            en: "Fill out the form and we will contact you"
+        },
+        "home_page-57": {
+            ukr: "Ім’я",
+            en: "Name"
+        },
+        "home_page-58": {
+            ukr: "Номер телефону",
+            en: "Phone number"
+        },
+        "home_page-59": {
+            ukr: "Надіслати",
+            en: "Send"
+        },
+        "home_page-60": {
+            ukr: "Залишай свою електронну пошту та отримуй звітність про діяльність фонду. Будь завжди в курсі !",
+            en: "Leave your e-mail and receive reports on the fund's activities. Always be informed!"
+        },
+        "home_page-61": {
+            ukr: "Звітність",
+            en: "Reports"
+        },
+        "home_page-62": {
+            ukr: "Підписка",
+            en: "Subscription"
+        },
+        "home_page-63": {
+            ukr: "Партнери",
+            en: "Partners"
+        },
+        "home_page-64": {
+            ukr: "Вакансії",
+            en: "Vacansies"
+        },
+        "home_page-65": {
+            ukr: "Часті запитання",
+            en: "FAQ"
+        },
+        "home_page-66": {
+            ukr: "Інформаційна лінія",
+            en: "Information line"
+        },
+        "home_page-67": {
+            ukr: "Підтримати",
+            en: "Support"
         }
     };
     function checkPagePathName() {
@@ -3470,8 +3992,16 @@
             currentTexts = homeTexts;
             break;
 
-          case "/another_page.html":
-            currentTexts = anotherTexts;
+          case "/partners.html":
+            currentTexts = partnersTexts;
+            break;
+
+          case "/vacancy.html":
+            currentTexts = vacancyTexts;
+            break;
+
+          case "/help.html":
+            currentTexts = helpTexts;
             break;
 
           default:
