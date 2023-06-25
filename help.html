@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230625015823">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230625110056">
 
 	<link rel="shortcut icon" href="logo.ico">
 	<meta name="Волонтерський Рух України" content="Волонтерський Рух України, збір коштів на машини для ЗСУ">
@@ -106,10 +106,10 @@
 								<div class="tab__card">
 									<div class="tab__card-sum">
 										<div class="card-sum">
-											<label for="" class="tab__card-label" data-lang="home_page-47">Сума внеску</label>
+											<label for="sum-donat" class="tab__card-label" data-lang="home_page-47">Сума внеску</label>
 											<div class="card-sum__donat">
 												<div class="card-sum__input">
-													<input type="text" placeholder="0" class="input">
+													<input type="text" placeholder="0" class="input" id="sum-donat" name="sum-donat">
 													<div class="sum__input form-group">
 														<div class="dropdown">
 															<button class="sum__input-title btn dropdown__button">UAH </button>
@@ -124,9 +124,9 @@
 													</div>
 												</div>
 												<div class="card-sum__btns">
-													<button type="button" class="card-sum__btn">100 UAH</button>
-													<button type="button" class="card-sum__btn">500 UAH</button>
-													<button type="button" class="card-sum__btn">1000 UAH</button>
+													<button type="button" class="card-sum__btn one-hundred">100 UAH</button>
+													<button type="button" class="card-sum__btn five-hundred">500 UAH</button>
+													<button type="button" class="card-sum__btn thousand">1000 UAH</button>
 												</div>
 											</div>
 										</div>
@@ -208,24 +208,24 @@
 
 
 			<section class="contact-form">
-				<div class="contact-form__box" id="contact-form">
+				<form class="contact-form__box" id="contact-form">
 					<div class="contact-form__title" data-lang="home_page-56">Заповнюйте форму і ми з вами зв’яжемось</div>
 					<div class="contact-form__content">
 						<div class="contact-form__item contact-item">
-							<label for="" class="tab__card-label contact-item__label" data-lang="home_page-57">Ім’я</label>
-							<input type="text" placeholder="Перемога" class="contact-item__input input" name="contact-item__name">
+							<label for="contact-item__name" class="tab__card-label contact-item__label" data-lang="home_page-57">Ім’я</label>
+							<input type="text" placeholder="Перемога" class="contact-item__input input" name="contact-item__name" id="contact-item__name">
 						</div>
 						<div class="contact-form__item contact-item">
-							<label for="" class="tab__card-label contact-item__label" data-lang="home_page-58">Номер телефону</label>
-							<input type="tel" placeholder="+3806711111111" class="contact-item__input input" name="contact-item__tel">
+							<label for="contact-item__tel" class="tab__card-label contact-item__label" data-lang="home_page-58">Номер телефону</label>
+							<input type="tel" placeholder="+3806711111111" class="contact-item__input input" name="contact-item__tel" id="contact-item__tel">
 						</div>
 						<div class="contact-form__item contact-item">
-							<label for="" class="tab__card-label contact-item__label">Email</label>
-							<input type="email" placeholder="peremoga@gmail.com" class="contact-item__input input" name="contact-item__email">
+							<label for="contact-item__email" class="tab__card-label contact-item__label">Email</label>
+							<input type="email" placeholder="peremoga@gmail.com" class="contact-item__input input" name="contact-item__email" id="contact-item__email">
 						</div>
 					</div>
 					<button type="button" class="contact-form__btn" data-modal data-lang="home_page-59">Надіслати</button>
-				</div>
+				</form>
 			</section>
 		</main>
 		<footer class="footer">
@@ -280,7 +280,7 @@
 			<button data-close type="button" class="modal__btn btn-blue"><a href="index.html#donat" data-lang="home_page-70">Підтримати збір</a><span class="_icon-arrowicon"></span></button>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230625015823"></script>
+	<script src="js/app.min.js?_v=20230625110056"></script>
 </body>
 
 </html>

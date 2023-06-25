@@ -3163,6 +3163,10 @@
     const listValuta = document.querySelector(".sum__valuta");
     const itemValuta = listValuta.querySelectorAll(".sum__valuta-item");
     const dropdownItemHidden = document.querySelector(".dropdown__item-hidden");
+    let oneHundred = document.querySelector(".one-hundred");
+    let fiveHundred = document.querySelector(".five-hundred");
+    let thousand = document.querySelector(".thousand");
+    let sumDonat = document.querySelector("#sum-donat");
     btnValuta.addEventListener("click", (function() {
         listValuta.classList.toggle("hidden");
         bthArrowValuta.classList.toggle("arrow-open");
@@ -3188,6 +3192,18 @@
             listValuta.classList.add("hidden");
             bthArrowValuta.classList.remove("arrow-open");
         }
+    }));
+    oneHundred.addEventListener("click", (function() {
+        oneHundred = 100;
+        sumDonat.value = oneHundred;
+    }));
+    fiveHundred.addEventListener("click", (function() {
+        fiveHundred = 500;
+        sumDonat.value = fiveHundred;
+    }));
+    thousand.addEventListener("click", (function() {
+        thousand = 1e3;
+        sumDonat.value = thousand;
     }));
     const langButtons = document.querySelectorAll("[data-btn]");
     const allLangs = [ "ukr", "en" ];
