@@ -3108,6 +3108,10 @@
             touchRatio: 1,
             simulateTouch: true,
             loop: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                draggable: true
+            },
             navigation: {
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
@@ -3117,6 +3121,17 @@
     }
     window.addEventListener("load", (function(e) {
         initSliders();
+    }));
+    nextEl.addEventListener("touchend", (e => {
+        if (startX > endX) {
+            left -= 300;
+            if (left < -890) left = 0;
+            slider.style.left = left + "px";
+        } else {
+            left += 300;
+            if (left > 0) left = 0;
+            slider.style.left = left + "px";
+        }
     }));
     let addWindowScrollEvent = false;
     setTimeout((() => {
