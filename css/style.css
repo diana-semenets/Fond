@@ -1378,8 +1378,10 @@ h6 {
 }
 
 .progress__box {
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 12px;
+  overflow: hidden;
 }
 
 @supports (padding-left: clamp( 1.5rem , 0.4090909091rem  +  5.4545454545vw , 4.5rem )) {
@@ -1439,14 +1441,28 @@ h6 {
 .progress__wrapper {
   margin-top: 50px;
   gap: 24px;
-}
-
-.progress__slide {
-  max-width: 526px;
-}
-
-.progress__slide img {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+  -webkit-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  width: 100%;
+}
+
+@supports (width: clamp( 17.5rem , 11.9090909091rem  +  27.9545454545vw , 32.875rem )) {
+  .progress__slide img {
+    width: clamp( 17.5rem , 11.9090909091rem  +  27.9545454545vw , 32.875rem );
+  }
+}
+
+@supports not (width: clamp( 17.5rem , 11.9090909091rem  +  27.9545454545vw , 32.875rem )) {
+  .progress__slide img {
+    width: calc(17.5rem + 15.375 * (100vw - 20rem) / 55);
+  }
 }
 
 .progress__btn {
@@ -1454,6 +1470,14 @@ h6 {
   height: 132px;
   border: 1px solid #1A1A1A;
   border-radius: 50%;
+}
+
+.progress__card {
+  position: relative;
+  float: left;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 
 .donat {
@@ -1979,29 +2003,6 @@ h6 {
   -webkit-transition: all ease 0.7s;
   -o-transition: all ease 0.7s;
   transition: all ease 0.7s;
-}
-
-.news__cards {
-  max-width: 1440px;
-  padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  position: relative;
-  left: 0;
-  -webkit-transition: all ease 0.7s;
-  -o-transition: all ease 0.7s;
-  transition: all ease 0.7s;
-  width: 100%;
-}
-
-.news__cards-card {
-  position: relative;
-  float: left;
-  -webkit-transition: all ease 0.2s;
-  -o-transition: all ease 0.2s;
-  transition: all ease 0.2s;
 }
 
 .header-page {
