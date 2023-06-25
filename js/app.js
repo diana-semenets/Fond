@@ -1291,8 +1291,8 @@
     let startX;
     let endX;
     sliderLeftBtn.addEventListener("click", (function() {
-        left -= 280;
-        if (left < -840) left = 0;
+        left -= 300;
+        if (left < -900) left = 0;
         slider.style.left = left + "px";
     }));
     slider.addEventListener("touchstart", (e => {

@@ -1968,7 +1968,7 @@ h6 {
 }
 
 .progress__wrapper {
-  max-width: 1400px;
+  max-width: 1290px;
   padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1994,7 +1994,6 @@ h6 {
   -o-transition: all ease 0.7s;
   transition: all ease 0.7s;
   width: 100%;
-  overflow: hidden;
 }
 
 .news__cards-card {
