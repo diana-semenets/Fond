@@ -2050,6 +2050,10 @@ h6 {
   text-transform: uppercase;
 }
 
+.header-page__btns-btn--active {
+  color: #1A1A1A;
+}
+
 .vacancy {
   padding: 0 72px;
   background-color: #F6F6FC;
@@ -2538,6 +2542,19 @@ h6 {
 
   .contact-form__box {
     padding-right: inherit;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .info__name-title,
+  .cars__title {
+    font-weight: 600;
+    font-size: 32px;
   }
 }
 
