@@ -3481,15 +3481,15 @@
         },
         "home_page-68": {
             ukr: "Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.",
-            en: "text?"
+            en: "Thank you for leaving a request on our website. Please wait, you will be contacted shortly."
         },
         "home_page-69": {
             ukr: "Все буде Україна!",
-            en: "text?"
+            en: "Everything will be Ukraine!"
         },
         "home_page-70": {
             ukr: "Підтримати збір",
-            en: "Support ???"
+            en: "Support fundraising"
         }
     };
     const partnersTexts = {
@@ -3688,6 +3688,18 @@
         "home_page-67": {
             ukr: "Підтримати",
             en: "Support"
+        },
+        "home_page-68": {
+            ukr: "Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.",
+            en: "Thank you for leaving a request on our website. Please wait, you will be contacted shortly."
+        },
+        "home_page-69": {
+            ukr: "Все буде Україна!",
+            en: "Everything will be Ukraine!"
+        },
+        "home_page-70": {
+            ukr: "Підтримати збір",
+            en: "Support fundraising"
         }
     };
     const vacancyTexts = {
@@ -3826,6 +3838,18 @@
         "home_page-67": {
             ukr: "Підтримати",
             en: "Support"
+        },
+        "home_page-68": {
+            ukr: "Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.",
+            en: "Thank you for leaving a request on our website. Please wait, you will be contacted shortly."
+        },
+        "home_page-69": {
+            ukr: "Все буде Україна!",
+            en: "Everything will be Ukraine!"
+        },
+        "home_page-70": {
+            ukr: "Підтримати збір",
+            en: "Support fundraising"
         }
     };
     const helpTexts = {
@@ -4000,6 +4024,18 @@
         "home_page-67": {
             ukr: "Підтримати",
             en: "Support"
+        },
+        "home_page-68": {
+            ukr: "Дякуємо, що залишили запит на нашому сайті. Очікуйте, найближчим часом з вами зв’яжуться.",
+            en: "Thank you for leaving a request on our website. Please wait, you will be contacted shortly."
+        },
+        "home_page-69": {
+            ukr: "Все буде Україна!",
+            en: "Everything will be Ukraine!"
+        },
+        "home_page-70": {
+            ukr: "Підтримати збір",
+            en: "Support fundraising"
         }
     };
     function checkPagePathName() {
