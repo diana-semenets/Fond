@@ -2546,11 +2546,6 @@ h6 {
 }
 
 @media (max-width: 320px) {
-  .title {
-    font-weight: 500;
-    font-size: 40px;
-  }
-
   .info__name-title,
   .cars__title {
     font-weight: 600;
