@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- should be "ua" -->
 <html lang="ru">
 
 <head>
@@ -9,6 +10,7 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- you don't have logo file -->
 	<link rel="shortcut icon" href="logo.ico">
 
 
@@ -272,12 +274,14 @@
 							<form class="tab__card-mail">
 								<label for="input-email" class="tab__card-label">Email*</label>
 								<div class="card-mail">
+									<!-- Duplicate id reference -> id="input-email" -->
 									<input type="email" class="input" placeholder="Введіть ваш email" id="input-email" name="input-email">
 									<div class="card-mail-text" data-lang="home_page-48">Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску</div>
 								</div>
 							</form>
 							<button type="button" class="tab__card-btn btn-blue" name="donat"><a data-lang="home_page-49" href="#">Підтримати</a><span class="_icon-arrowicon"></span></button>
 						</div>
+						<!-- Duplicate id reference -> id="subs" -->
 						<button type="button" class="tab__btn btn" id="subs"><a href="#" data-lang="home_page-50">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
 					</div>
 
@@ -289,12 +293,14 @@
 							<form class="tab__card-mail">
 								<label for="input-email" class="tab__card-label">Email*</label>
 								<div class="card-mail">
+									<!-- Duplicate id reference -> id="input-email" -->
 									<input type="email" class="input" placeholder="Введіть ваш email" id="input-email" name="input-email">
 									<div class="card-mail-text" data-lang="home_page-52">Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску</div>
 								</div>
 							</form>
 
 						</div>
+						<!-- Duplicate id reference -> id="subs" -->
 						<button type="button" class="tab__btn btn" id="subs"><a href="#" data-lang="home_page-53">Оформити підписку</a><span class="_icon-arrowicon"></span> </button>
 					</div>
 
@@ -423,25 +429,25 @@
 
 	<script>
 
-		
+
 let sliderLeftBtn = document.querySelector('#slider-left');
-      
+
 	  let left = 0;
 			//let sliderContainer = document.querySelector('.slider__container').offsetWidth;
-			
+
 	  let slider = document.querySelector('.progress__wrapper');
 	  let startX;
 	  let endX;
-	
-	
-	  sliderLeftBtn.addEventListener('click', function() {            
+
+
+	  sliderLeftBtn.addEventListener('click', function() {
 		left = left - 400;
 		  if (left < -800) {
 			left = 0;
 		  }
-			slider.style.left = left + 'px';            
+			slider.style.left = left + 'px';
 	   });
-	
+
 			slider.addEventListener('touchstart', e => {
 				console.log('touchstart', e.touches[0].clientX);
 				startX = e.touches[0].clientX;
@@ -450,26 +456,26 @@ let sliderLeftBtn = document.querySelector('#slider-left');
 				console.log('touchmovet', e.touches[0].clientX);
 				endX = e.touches[0].clientX;
 			})
-	
-	
+
+
 			slider.addEventListener('touchend', e => {
 				if (startX > endX) {
 					left = left - 300;
 					if (left < -890) {
 						left = 0;
 					}
-					slider.style.left = left + 'px';   
+					slider.style.left = left + 'px';
 				} else {
 					left = left + 300;
 				if (left > 0) {
 					left = 0;
-				} 
+				}
 				slider.style.left = left + 'px';
 				}
-				
+
 			})
-	
-				 
+
+
 	</script>
 
 

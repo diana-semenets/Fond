@@ -9,8 +9,9 @@
   font-style: normal;
 }
 
+/* use [*=] [^=] are slow selectors and not good practise */
 [class*=_icon-]:before {
-  font-family: "icomoon";
+  font-family: "icomoon"; /* better to add fallback sans-serif or serif */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,6 +27,7 @@
 
 @font-face {
   font-family: "icomoon";
+  /* why you try to load .eot, .ttf, .svg icon fonts if you don't have it */
   src: url("fonts/icomoon.eot?kvaiyr");
   src: url("fonts/icomoon.eot?kvaiyr#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?kvaiyr") format("truetype"), url("fonts/icomoon.woff?kvaiyr") format("woff"), url("fonts/icomoon.svg?kvaiyr#icomoon") format("svg");
   font-weight: normal;
@@ -35,6 +37,7 @@
 
 [class^=icon-],
 [class*=" icon-"] {
+  /* why is it issue? */
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -189,14 +192,14 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-} 
+}
 
 .wrapper > * {
   min-width: 0;
 } */
 
 /*
-(i) Стили будут применяться ко 
+(i) Стили будут применяться ко
 всем классам содержащим *__container
 Например header__container, main__container и т.д.
 Снипет (HTML): cnt
@@ -291,6 +294,10 @@ h6 {
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  /* better to add
+   * border: 1px solid #3C59F0;
+   * to avoid "jumping" the sections on mouse hover
+   */
 }
 
 .btn-blue:hover {
@@ -407,7 +414,7 @@ h6 {
 */
 
 .header {
-  z-index: 2;
+  z-index: 2; /* why you use z-index here ? */
   color: #fff;
 }
 
@@ -497,6 +504,12 @@ h6 {
   background-color: #1A1A1A;
 }
 
+/*
+ * all __box selectors - main__box, info__box, partners__box, cars__box, ... etc could be simplified
+ * for example, you can create separate class with name container with matched styles, such as
+ * margin-left, margin-right, padding-left, padding-right
+ * and keep padding-top for each __box (because these values are different)
+ */
 .footer__box {
   max-width: 1440px;
   margin: 0 auto;
@@ -688,6 +701,8 @@ h6 {
   background: -webkit-gradient(linear, left top, left bottom, from(#3C59F0), color-stop(68.13%, #A9B6F7), to(#FFE895));
   background: -o-linear-gradient(top, #3C59F0 0%, #A9B6F7 68.13%, #FFE895 100%);
   background: linear-gradient(180deg, #3C59F0 0%, #A9B6F7 68.13%, #FFE895 100%);
+  /* is not a good idea to use margin with minus value, always try to avoid minus value with margin and padding */
+  /* possible solution is to make .header position: absolute */
   margin-top: -104px;
   color: #fff;
 }
@@ -1536,7 +1551,7 @@ h6 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  
+
   grid-template-columns: repeat(3, minmax(200px, 382px));
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -3113,11 +3128,11 @@ h6 {
   }
 }
 
-.partner__item-ford::before { 
+.partner__item-ford::before {
   background-image: url('../img/ford-logo.webp');
  }
 
-.partner__item-skoda::before { 
+.partner__item-skoda::before {
   background-image: url('../img/skoda_logo.webp');
  }
 
