@@ -3105,7 +3105,7 @@
             spaceBetween: 0,
             autoHeight: true,
             speed: 800,
-            touchRatio: 1,
+            touchRatio: 3,
             simulateTouch: true,
             loop: true,
             scrollbar: {
@@ -3121,17 +3121,6 @@
     }
     window.addEventListener("load", (function(e) {
         initSliders();
-    }));
-    nextEl.addEventListener("touchend", (e => {
-        if (startX > endX) {
-            left -= 300;
-            if (left < -890) left = 0;
-            slider.style.left = left + "px";
-        } else {
-            left += 300;
-            if (left > 0) left = 0;
-            slider.style.left = left + "px";
-        }
     }));
     let addWindowScrollEvent = false;
     setTimeout((() => {
