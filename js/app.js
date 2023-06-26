@@ -3097,11 +3097,11 @@
         });
     }
     function initSliders() {
-        if (document.querySelector(".swiper")) new core(".swiper", {
+        if (document.querySelector(".progress__slider")) new core(".progress__slider", {
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 0,
             speed: 800,
             touchRatio: 5,
@@ -3113,6 +3113,16 @@
             navigation: {
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 0
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
             },
             on: {}
         });

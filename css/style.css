@@ -2544,12 +2544,6 @@ h6 {
   transition-property: transform, -webkit-transform;
 }
 
-.swiper-android .swiper-slide,
-.swiper-android .swiper-wrapper {
-  -webkit-transform: translate3d(0px, 0, 0);
-          transform: translate3d(0px, 0, 0);
-}
-
 .swiper-button-lock {
   display: none !important;
 }
