@@ -76,6 +76,8 @@
     let _slideToggle = (target, duration = 500) => {
         if (target.hidden) return _slideDown(target, duration); else return _slideUp(target, duration);
     };
+
+
     function spollers() {
         const spollersArray = document.querySelectorAll("[data-spollers]");
         if (spollersArray.length > 0) {
@@ -154,6 +156,8 @@
             }));
         }
     }
+
+
     function tabs() {
         const tabs = document.querySelectorAll("[data-tabs]");
         let tabsActiveHash = [];
