@@ -3101,13 +3101,11 @@
             modules: [ Navigation ],
             observer: true,
             observeParents: true,
-            slidesPerView: 1.2,
+            slidesPerView: 2,
             spaceBetween: 0,
-            autoHeight: true,
             speed: 800,
-            touchRatio: 3,
+            touchRatio: 5,
             simulateTouch: true,
-            loop: true,
             scrollbar: {
                 el: ".swiper-scrollbar",
                 draggable: true
