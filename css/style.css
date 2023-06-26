@@ -697,6 +697,7 @@ h6 {
   margin: 0 auto;
   padding-top: 166px;
   padding-bottom: 160px;
+  overflow: hidden;
 }
 
 @supports (padding-left: clamp( 1.5rem , 0.4090909091rem  +  5.4545454545vw , 4.5rem )) {
