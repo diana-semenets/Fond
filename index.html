@@ -8,6 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="stylesheet" href="css/style.css">
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 
 	<link rel="shortcut icon" href="logo.ico">
 
@@ -191,39 +195,43 @@
 						<button class="progress__btn " type="button" name="slider" id="slider-left"><span class="_icon-arrow-right"></span></button>
 					</div>
 					<div class="progress__wrapper" >
-						<div class="progress__card">
-							<div class="progress__slide swiper-slide">
-								<picture><source srcset="img/slider1.webp" type="image/webp"><img src="img/slider1.png" alt="car"></picture>
-							</div>
-						</div>
-						<div class="progress__card">
-							<div class="progress__slide swiper-slide">
-								<picture><source srcset="img/slider2.webp" type="image/webp"><img src="img/slider2.png" alt="car"></picture>
-							</div>
-						</div>
-						<div class="progress__card">
-							<div class="progress__slide swiper-slide">
-								<picture><source srcset="img/slider3.webp" type="image/webp"><img src="img/slider3.png" alt="car"></picture>
-							</div>
-						</div>
-					</div>
-
-
-
-					<!---		<div class="progress__slider swiper">
-							<div class="progress__wrapper swiper-wrapper">
+						
+							<div class="progress__card">
 								<div class="progress__slide swiper-slide">
 									<picture><source srcset="img/slider1.webp" type="image/webp"><img src="img/slider1.png" alt="car"></picture>
 								</div>
+							</div>
+							<div class="progress__card">
 								<div class="progress__slide swiper-slide">
 									<picture><source srcset="img/slider2.webp" type="image/webp"><img src="img/slider2.png" alt="car"></picture>
 								</div>
+							</div>
+							<div class="progress__card">
 								<div class="progress__slide swiper-slide">
 									<picture><source srcset="img/slider3.webp" type="image/webp"><img src="img/slider3.png" alt="car"></picture>
 								</div>
-							</div> -->
+							</div>
+						
+					</div> 
 
-				</div>
+
+				<!---	<div class="progress__slider swiper-container">
+							<div class="progress__slider swiper">
+							<div class="progress__wrapper swiper-wrapper">
+								<div class="progress__slide swiper-slide">
+									<img src="img/slider1.webp" alt="car">
+								</div>
+								<div class="progress__slide swiper-slide">
+									<img src="img/slider2.webp" alt="car">
+								</div>
+								<div class="progress__slide swiper-slide">
+									<img src="img/slider3.png" alt="car">
+								</div>
+							</div>
+						</div>  
+						
+
+				</div> -->
 
 	</div>
 	</section>
@@ -423,15 +431,15 @@
 
 	<script>
 
+
+
 		
-let sliderLeftBtn = document.querySelector('#slider-left');
-      
-	  let left = 0;
-			//let sliderContainer = document.querySelector('.slider__container').offsetWidth;
+		let sliderLeftBtn = document.querySelector('#slider-left');     
+	  	let left = 0;
 			
-	  let slider = document.querySelector('.progress__wrapper');
-	  let startX;
-	  let endX;
+	  	let slider = document.querySelector('.progress__wrapper');
+	  	let startX;
+	  	let endX;
 	
 	
 	  sliderLeftBtn.addEventListener('click', function() {            

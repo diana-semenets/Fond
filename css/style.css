@@ -1426,7 +1426,7 @@ h6 {
 }
 
 .progress__info {
-  max-width: 1296px;
+  max-width: 1440px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1443,7 +1443,7 @@ h6 {
   max-width: 1440px;
 }
 
-.progress__wrapper {
+.progress__wrapper {  
   margin-top: 50px;
   gap: 24px;
   width: 100%;
@@ -1454,8 +1454,7 @@ h6 {
   left: 0;
   -webkit-transition: all ease 0.7s;
   -o-transition: all ease 0.7s;
-  transition: all ease 0.7s;
-  width: 100%;
+  transition: all ease 0.7s; 
 }
 
 @supports (width: clamp( 17.5rem , 11.9090909091rem  +  27.9545454545vw , 32.875rem )) {
@@ -1996,19 +1995,6 @@ h6 {
   display: none;
 }
 
-.progress__wrapper {
-  max-width: 1290px;
-  padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  position: relative;
-  left: 0;
-  -webkit-transition: all ease 0.7s;
-  -o-transition: all ease 0.7s;
-  transition: all ease 0.7s;
-}
 
 .header-page {
   z-index: 2;
