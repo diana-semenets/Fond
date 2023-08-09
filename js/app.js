@@ -157,6 +157,7 @@
         }
     }
 
+//-----------------------tabs-----------------------------
 
     function tabs() {
         const tabs = document.querySelectorAll("[data-tabs]");
@@ -307,79 +308,66 @@
             }));
         }
     }), 0);
-    const modalTrigger = document.querySelectorAll("[data-modal]"), modal = document.querySelector(".modal"), modalCloseBtn = document.querySelector("[data-close]");
-    modalTrigger.forEach((btn => {
+
+   /*------------popups----------------*/ 
+
+    const modalTrigger = document.querySelectorAll("[data-modal]"), 
+    modal = document.querySelector(".modal"), 
+    modalCloseBtn = document.querySelector("[data-close]");
+    const modalLink = document.querySelector('.modal__btn');
+
+    function showModal (){
         btn.addEventListener("click", (() => {
             modal.classList.add("show");
             modal.classList.remove("hide");
             document.body.style.overflow = "hidden";
         }));
-    }));
+    }
+
+/*    modalTrigger.forEach((btn => {
+        btn.addEventListener("click", (() => {
+            modal.classList.add("show");
+            modal.classList.remove("hide");
+            document.body.style.overflow = "hidden";
+        }));
+    }));  */
     function closeMode() {
         modal.classList.add("hide");
         modal.classList.remove("show");
         document.body.style.overflow = "";
     }
     modalCloseBtn.addEventListener("click", closeMode);
+    modalLink.addEventListener("click", closeMode);
     modal.addEventListener("click", (e => {
         if (e.target === modal) closeMode();
     }));
     document.addEventListener("keydown", (e => {
         if (e.code === "Escape" && modal.classList.contains("show")) closeMode();
-    }));
-    const btnValuta = document.querySelector(".sum__input-title");
-    const bthArrowValuta = document.querySelector(".sum__input-icon");
-    const listValuta = document.querySelector(".sum__valuta");
-    const itemValuta = listValuta.querySelectorAll(".sum__valuta-item");
-    const dropdownItemHidden = document.querySelector(".dropdown__item-hidden");
-    let oneHundred = document.querySelector(".one-hundred");
-    let fiveHundred = document.querySelector(".five-hundred");
-    let thousand = document.querySelector(".thousand");
-    let sumDonat = document.querySelector("#sum-donat");
-    btnValuta.addEventListener("click", (function() {
-        listValuta.classList.toggle("hidden");
-        bthArrowValuta.classList.toggle("arrow-open");
-        this.classList.add("sum__input-title--active");
-    }));
-    itemValuta.forEach((function(listItem) {
-        listItem.addEventListener("click", (function(e) {
-            e.stopPropagation();
-            btnValuta.innerText = this.innerText;
-            dropdownItemHidden.value = this.dataset.value;
-            listValuta.classList.add("hidden");
-            bthArrowValuta.classList.remove("arrow-open");
-        }));
-    }));
-    document.addEventListener("click", (function(e) {
-        if (e.target !== btnValuta) {
-            listValuta.classList.add("hidden");
-            bthArrowValuta.classList.remove("arrow-open");
-        }
-    }));
-    document.addEventListener("keydown", (function(e) {
-        if (e.key === "Tab" || e.key === "Escape") {
-            listValuta.classList.add("hidden");
-            bthArrowValuta.classList.remove("arrow-open");
-        }
-    }));
-    oneHundred.addEventListener("click", (function() {
-        oneHundred = 100;
-        sumDonat.value = oneHundred;
-    }));
-    fiveHundred.addEventListener("click", (function() {
-        fiveHundred = 500;
-        sumDonat.value = fiveHundred;
-    }));
-    thousand.addEventListener("click", (function() {
-        thousand = 1e3;
-        sumDonat.value = thousand;
-    }));
+    })); 
+
+   
+
+
+/*------------langs----------------*/
+
     const langButtons = document.querySelectorAll("[data-btn]");
     const allLangs = [ "ukr", "en" ];
     const currentPathName = window.location.pathname;
     let currentLang = localStorage.getItem("language") || checkBrowserLang() || "ukr";
     let currentTexts = {};
     const homeTexts = {
+        "home_page-title": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
+        "home_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
+        "footer_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
         "home_page-1": {
             ukr: "авто для зсу",
             en: "Cars for armed forces"
@@ -433,8 +421,8 @@
             en: "Cherkasy, Ukraine"
         },
         "home_page-14": {
-            ukr: "Черкаси, Україна",
-            en: "Cherkasy, Ukraine"
+            ukr: "Кропивницький, Україна",
+            en: "Kropyvnytskyi, Ukraine"
         },
         "home_page-15": {
             ukr: "Офіційний сервіс",
@@ -517,8 +505,8 @@
             en: "How can you get involved?"
         },
         "home_page-35": {
-            ukr: "Як ти можеш долучитись?",
-            en: "How can you get involved?"
+            ukr: "Ти можеш підтримати нашу ініціативу своїм донатом. Це може бути як одноразовий внесок, так і підписка на щомісячний донат. ",
+            en: "You can support our initiative with your donation. It can be either a one-time contribution or a subscription to a monthly donation."
         },
         "home_page-36": {
             ukr: "Давай наближувати перемогу разом!",
@@ -569,8 +557,8 @@
             en: "Contribution amount"
         },
         "home_page-48": {
-            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
-            en: "You will receive a receipt by email and you will receive reports on your contribution"
+            ukr: "Ви будете отримувати звітності на email по вашому внеску",
+            en: "You will receive reports on your contribution"
         },
         "home_page-49": {
             ukr: "Підтримати",
@@ -659,12 +647,36 @@
         "home_page-70": {
             ukr: "Підтримати збір",
             en: "Support fundraising"
+        },
+        "home_page-71": {
+            ukr: "Поділись сайтом та поширюй збір коштів на авто для ЗСУ!",
+            en: "Share the site and spread the fundraiser for cars for the Armed Forces of Ukraine!"
+        },
+        "home_page-72": {
+            ukr: "Копіювати посилання на сайт",
+            en: "Copy the link to the site"
+        },
+        "home_page-73": {
+            ukr: "Поділитись у соціальних мережах",
+            en: "Share on social networks"
         }
     };
     const partnersTexts = {
         "partners_page-1": {
             ukr: "Наші партнери",
             en: "Our partners"
+        },
+        "home_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
+        "footer_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
+        "home_page-title": {
+            ukr: "Партнери - Волонтерський Рух України",
+            en: "Partners - Volunteer Movement of Ukraine"
         },
         "partners_page-2": {
             ukr: "Посилання на сайт",
@@ -779,8 +791,8 @@
             en: "Contribution amount"
         },
         "home_page-48": {
-            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
-            en: "You will receive a receipt by email and you will receive reports on your contribution"
+            ukr: "Ви будете отримувати звітності на email по вашому внеску",
+            en: "You will receive reports on your contribution"
         },
         "home_page-49": {
             ukr: "Підтримати",
@@ -876,6 +888,18 @@
             ukr: "Вакансії",
             en: "Vacansies"
         },
+        "vacancy_page-title": {
+            ukr: "Вакансії - Волонтерський Рух України",
+            en: "Vacansies - Volunteer Movement of Ukraine"
+        },
+        "home_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
+        "footer_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
         "vacancy_page-2": {
             ukr: "Координатор юриста",
             en: "Lawyer coordinator"
@@ -929,8 +953,8 @@
             en: "Contribution amount"
         },
         "home_page-48": {
-            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
-            en: "You will receive a receipt by email and you will receive reports on your contribution"
+            ukr: "Ви будете отримувати звітності на email по вашому внеску",
+            en: "You will receive reports on your contribution"
         },
         "home_page-49": {
             ukr: "Підтримати",
@@ -1026,6 +1050,18 @@
             ukr: "Часті запитання",
             en: "FAQ"
         },
+        "home_page-title": {
+            ukr: "Запитання - Волонтерський Рух України",
+            en: "FAQ - Volunteer Movement of Ukraine"
+        },
+        "home_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
+        "footer_page-logo": {
+            ukr: "Волонтерський Рух України",
+            en: "Volunteer Movement of Ukraine"
+        },
         "help_page-2": {
             ukr: "Кому допомагає фонд?",
             en: "Who does the fund help?"
@@ -1075,7 +1111,7 @@
             en: "The fund purchase Hyundai off-roaders and minivans. Our partner, the Hyundai service center in Dnipro, issues cars and provides their technical support."
         },
         "help_page-14": {
-            ukr: "В подальшому за вашої підтримки, ми плануємо масшабуватись та задіювати сервісні центри наших партнерів у містах Черкаси та Кропівницький. Так ми зможемо допомогти більшій кількості наших військових, забезпечивши іх автомобілями та безкоштовним технічним супровідом.",
+            ukr: "В подальшому за вашої підтримки, ми плануємо масшабуватись та задіювати сервісні центри наших партнерів у містах Черкаси та Кропивницький. Так ми зможемо допомогти більшій кількості наших військових, забезпечивши їх автомобілями та безкоштовним технічним супровідом.",
             en: "In the future, with your support, we plan to expand and use the service centers of our partners in the cities of Cherkasy and Kropyvnytskyi. So we will be able to help more of our military by providing them with cars and free technical support."
         },
         "help_page-15": {
@@ -1115,8 +1151,8 @@
             en: "Contribution amount"
         },
         "home_page-48": {
-            ukr: "Вам надійде квитанція на email та ви будете отримувати звітності по вашому внеску",
-            en: "You will receive a receipt by email and you will receive reports on your contribution"
+            ukr: "Ви будете отримувати звітності на email по вашому внеску",
+            en: "You will receive reports on your contribution",
         },
         "home_page-49": {
             ukr: "Підтримати",
@@ -1248,7 +1284,10 @@
                 changeLang();
             }
         }));
-    }));
+    }));  
+
+   
+
     function resetActiveClass(arr, activeClass) {
         arr.forEach((elem => {
             elem.classList.remove(activeClass);
@@ -1277,8 +1316,197 @@
     }
     console.log("navigator.language", checkBrowserLang());
 
+  
+    /*-----------copy-------------------*/
 
-   
+    function copy () {
+        const textToCopyOne = document.querySelector('#copy-text-one');
+        const copyBtn = document.querySelector('#copy-one'); 
+        const textToCopySecond = document.querySelector('#copy-text-second');
+        const copyBtnSecond = document.querySelector('#copy-second'); 
+        const textToCopyThird = document.querySelector('#copy-text-third');
+        const copyBtnThird = document.querySelector('#copy-third'); 
+        const textToCopyFourth = document.querySelector('#copy-text-fourth');
+        const copyBtnFourth = document.querySelector('#copy-fourth');
+       
+        copyBtn.addEventListener('click', function copyTextOne () {         
+            navigator.clipboard.writeText(textToCopyOne.innerText);
+        });
+
+        copyBtnSecond.addEventListener('click', function copyTextSecond () {         
+            navigator.clipboard.writeText(textToCopySecond.innerText);
+        });
+
+        copyBtnThird.addEventListener('click', function copyTextThird () {         
+            navigator.clipboard.writeText(textToCopyThird.innerText);
+        });
+        copyBtnFourth.addEventListener('click', function copyTextFourth () {         
+            navigator.clipboard.writeText(textToCopyFourth.innerText);
+        });
+    
+    };
+
+
+    /*------------forms----------------*/
+
+
+
+
+ /*   phoneInputs = document.querySelectorAll('input[name="contact-item__tel"]');
+
+    phoneInputs.forEach(item => {
+        item.addEventListener('input', () => {
+            item.value = item.value.replace(/\D/, '');
+        });
+    }); */
+
+    const form = document.querySelectorAll('form'),
+    inputs = document.querySelectorAll('input'),
+    phoneInputs = document.querySelectorAll('input[name="tel"]');
+
+phoneInputs.forEach(item => {
+  item.addEventListener('input', () => {
+      item.value = item.value.replace(/\D/, '');
+  });
+});
+
+const message = {
+  loading: 'Загрузка...',
+  success: showModal (),
+  failure: 'Что-то пошло не так...'
+};
+
+const postData = async (url, data) => {
+    document.querySelector('.status').textContent = message.loading;
+    let res = await fetch(url, {
+        method: "POST",
+        body: data
+    });
+
+    return await res.text();
+};
+
+const clearInputs = () => {
+    inputs.forEach(item => {
+        item.value = '';
+    });
+};
+
+form.forEach(item => {
+    item.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        let statusMessage = document.createElement('div');
+        statusMessage.classList.add('status');
+        item.appendChild(statusMessage);
+
+        const formData = new FormData(item);
+
+        postData('server.php', formData)
+            .then(res => {
+                console.log(res);
+                showModal();
+            })
+            .catch(() => 
+            statusMessage.textContent = message.failure)
+            .finally(() => {
+                clearInputs();
+                setTimeout(() => {
+                    statusMessage.remove();
+                }, 5000);
+            });
+    });
+});
+
+
+//    let form = document.querySelector('.contact-form__box'),
+//    nameValue = document.querySelector('#contact__name'),
+//    inputEmail = document.querySelector('#contact__email'),
+ //   phoneValue = document.querySelector('#contact__tel');
+    
+//    const formBtn = document.querySelector(".contact-form__btn");
+
+    
+    
+
+//  formBtn.addEventListener ("submit", () => {
+ //   formValidate();
+//  })
+
+
+//}
+
+//валидация!------------------------------
+
+/*let form = document.querySelector('.js-form'),
+    formInputs = document.querySelectorAll('.js-input'),
+    inputEmail = document.querySelector('.js-input-email'),
+    inputPhone = document.querySelector('.js-input-phone');
+
+
+function validateEmail(email) {
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
+
+function validatePhone(phone) {
+    let re = /^[0-9\s]*$/;
+    return re.test(String(phone));
+}
+
+form.onsubmit = function () {
+    let emailVal = inputEmail.value,
+        phoneVal = inputPhone.value,
+        emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+
+
+    formInputs.forEach(function (input) {
+        if (input.value === '') {
+            input.classList.add('error');
+
+        } else {
+            input.classList.remove('error');
+        }
+    });
+
+    if (emptyInputs.length !== 0) {
+        console.log('inputs not filled');
+        return false;
+    }
+    if(!validateEmail(emailVal)) {
+        console.log('email not valid');
+        inputEmail.classList.add('error');
+        return false;
+    } else {
+        inputEmail.classList.remove('error');
+        
+    }
+    
+    if (!validatePhone(phoneVal)) {
+        console.log('phone not valid');
+        inputPhone.classList.add('error');
+        return false;
+    } else {
+        inputPhone.classList.remove('error');
+    }
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*/
+    copy();     
     spollers();
     tabs();
 })();
